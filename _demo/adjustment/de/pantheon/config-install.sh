@@ -28,6 +28,8 @@ pantheon_config_install () {
 
 	pantheon_set_keybindings_terminal
 
+	pantheon_set_keybindings_volume_control
+
 	pantheon_set_keybindings_about_window
 
 	pantheon_set_keybindings_about_workspace
@@ -439,6 +441,29 @@ pantheon_set_keybindings_terminal () {
 
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F2']"'"'
 	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F2']"
+
+}
+
+
+pantheon_set_keybindings_volume_control () {
+
+	echo
+	echo "### pantheon_set_keybindings_volume_control"
+	echo
+
+
+	## $ gsettings list-recursively | grep 'org.gnome.settings-daemon.plugins.media-keys volume'
+
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "'"['AudioLowerVolume']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['AudioLowerVolume']"
+	
+
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "'"['AudioRaiseVolume']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['AudioRaiseVolume']"
+	
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "'"['AudioMute']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute "['AudioMute']"
+	
 
 }
 
