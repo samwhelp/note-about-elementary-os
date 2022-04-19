@@ -234,7 +234,7 @@ wallpaper_asset_install () {
 	echo "## Asset: wallpaper"
 	echo
 
-	wallpaper_asset_install_wallpaper_select_xfce
+	wallpaper_asset_install_wallpaper_select_gnome
 
 	echo
 
@@ -248,22 +248,22 @@ wallpaper_asset_install () {
 ################################################################################
 ### Head: Wallpaper
 ##
-wallpaper_asset_install_wallpaper_select_xfce () {
+wallpaper_asset_install_wallpaper_select_gnome () {
 
 
 	echo
 
-	if [ -a "$HOME/.local/bin/wallpaper-select-xfce" ]; then
+	if [ -a "$HOME/.local/bin/wallpaper-select-gnome" ]; then
 		echo
-		echo "## Tool Exists:" "$HOME/.local/bin/wallpaper-select-xfce"
+		echo "## Tool Exists:" "$HOME/.local/bin/wallpaper-select-gnome"
 		echo
 		return 0
 	fi
 
 	echo
 
-	echo "wget 'https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-xfce/remote-install.sh' -q -O - | bash"
-	wget 'https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-xfce/remote-install.sh' -q -O - | bash
+	echo "wget 'https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-gnome/remote-install.sh' -q -O - | bash"
+	wget 'https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-gnome/remote-install.sh' -q -O - | bash
 
 
 	echo
