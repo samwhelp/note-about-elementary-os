@@ -15,6 +15,8 @@ pantheon_config_install () {
 	pantheon_set_wallpaper
 
 	pantheon_set_theme
+	
+	pantheon_set_desktop_corner_behavior
 
 	pantheon_set_keybindings_screensaver
 
@@ -358,6 +360,31 @@ pantheon_set_theme_matcha_dark_aliz () {
 }
 
 
+pantheon_set_desktop_corner_behavior () {
+	echo
+	echo "### pantheon_set_desktop_corner_behavior"
+	echo
+
+
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'
+	
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'
+	
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'switch-to-workspace-last'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'switch-to-workspace-last'
+	
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'show-workspace-view'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'show-workspace-view'
+	
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'custom-command'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'custom-command'
+
+
+}
+
+
 pantheon_set_keybindings_screensaver () {
 	echo
 	echo "### pantheon_set_keybindings_screensaver"
@@ -454,11 +481,11 @@ pantheon_set_keybindings_expose_windows () {
 
 
 
-	echo 'gsettings set org.pantheon.desktop.gala.keybindings expose-windows "'"['<Super>e']"'"'
+	echo 'gsettings set org.pantheon.desktop.gala.keybindings expose-windows "'"['<Alt>e']"'"'
 	gsettings set org.pantheon.desktop.gala.keybindings expose-windows "['<Alt>e']"
 
-	echo 'gsettings set org.pantheon.desktop.gala.keybindings expose-all-windows "'"['<Super>r']"'"'
-	gsettings set org.pantheon.desktop.gala.keybindings expose-all-windows "['<Alt>r']"
+	echo 'gsettings set org.pantheon.desktop.gala.keybindings expose-all-windows "'"['<Alt>r', '<Super>Tab']"'"'
+	gsettings set org.pantheon.desktop.gala.keybindings expose-all-windows "['<Alt>r', '<Super>Tab']"
 }
 
 pantheon_set_keybindings_show_desktop () {
@@ -469,7 +496,8 @@ pantheon_set_keybindings_show_desktop () {
 
 	# org.gnome.desktop.wm.keybindings show-desktop ['<Super>Down', '<Super>s']
 
-	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Alt>j', '<Alt>Down', '<Alt>d']"
+	echo 'gsettings set org.gnome.desktop.wm.keybindings show-desktop "'"['<Alt>d', '<Super>grave', '<Alt>j', '<Alt>Down']"'"'
+	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Alt>d', '<Super>grave', '<Alt>j', '<Alt>Down']"
 
 }
 
@@ -478,7 +506,10 @@ pantheon_set_keybindings_switch_windows () {
 	#org.gnome.desktop.wm.keybindings switch-windows-backward ['<Alt><Shift>Tab']
 	#org.gnome.desktop.wm.keybindings switch-windows ['<Alt>Tab']
 
+	echo 'gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "'"['<Super>a', '<Super>h', '<Super>Left']"'"'
 	gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Super>a', '<Super>h', '<Super>Left']"
+	
+	echo 'gsettings set org.gnome.desktop.wm.keybindings switch-windows "'"['<Super>s', '<Super>l', '<Super>Right']"'"'
 	gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Super>s', '<Super>l', '<Super>Right']"
 
 
@@ -585,10 +616,11 @@ pantheon_set_keybindings_about_workspace () {
 
 
 	## Workspace
-	#gsettings set org.gnome.mutter dynamic-workspaces true
-	gsettings set org.gnome.mutter dynamic-workspaces false
-	gsettings set org.gnome.desktop.wm.preferences num-workspaces 5
-	gsettings set org.gnome.desktop.wm.preferences workspace-names "['Term', 'Edit', 'Web', 'File', 'Misc']"
+	gsettings set org.gnome.mutter dynamic-workspaces true
+
+	#gsettings set org.gnome.mutter dynamic-workspaces false
+	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 5
+	#gsettings set org.gnome.desktop.wm.preferences workspace-names "['Term', 'Edit', 'Web', 'File', 'Misc']"
 
 
 	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>End', '<Alt>z']"
