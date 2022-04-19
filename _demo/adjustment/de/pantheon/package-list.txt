@@ -76,8 +76,22 @@ qt5ct
 qt5-style-plugins
 #qt5-gtk2-platformtheme
 
+
 ## Theme
 
 breeze-cursor-theme
 
 
+
+## software-properties-common
+
+
+software-properties-common
+
+##
+## https://github.com/pantheon-tweaks/pantheon-tweaks
+## sudo apt install -y software-properties-common
+##
+## sudo add-apt-repository -y ppa:philip.scott/pantheon-tweaks
+## sudo apt install -y pantheon-tweaks
+##

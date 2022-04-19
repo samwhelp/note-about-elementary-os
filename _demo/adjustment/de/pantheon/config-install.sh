@@ -433,7 +433,7 @@ pantheon_set_keybindings_pip () {
 pantheon_set_keybindings_terminal () {
 
 	echo
-	echo "### pantheon_set_keybindings_start_here"
+	echo "### pantheon_set_keybindings_terminal"
 	echo
 
 	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
@@ -441,6 +441,11 @@ pantheon_set_keybindings_terminal () {
 
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F2']"'"'
 	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F2']"
+	
+	
+	echo "gsettings set io.elementary.terminal.settings follow-last-tab true"
+	gsettings set io.elementary.terminal.settings follow-last-tab true
+	
 
 }
 
