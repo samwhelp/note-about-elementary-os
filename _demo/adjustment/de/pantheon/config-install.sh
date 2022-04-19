@@ -904,8 +904,23 @@ thunar_config_install () {
 	mkdir -p "$HOME/.config/Thunar"
 
 
-	echo "install -Dm644 ./config/thunar/uca.xml $HOME/.config/Thunar/uca.xml"
-	install -Dm644 "./config/thunar/uca.xml" "$HOME/.config/Thunar/uca.xml"
+	echo "install -Dm644 ./config/thunar/Thunar/uca.xml $HOME/.config/Thunar/uca.xml"
+	install -Dm644 "./config/thunar/Thunar/uca.xml" "$HOME/.config/Thunar/uca.xml"
+
+	echo "install -Dm644 ./config/thunar/Thunar/accels.scm $HOME/.config/Thunar/accels.scm"
+	install -Dm644 "./config/thunar/Thunar/accels.scm" "$HOME/.config/Thunar/accels.scm"
+
+	echo
+
+	echo "mkdir -p $HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
+	mkdir -p "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml"
+
+	echo "install -Dm644 ./config/thunar/xfce4/xfconf/xfce-perchannel-xml/thunar.xml $HOME/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml"
+	install -Dm644 "./config/thunar/xfce4/xfconf/xfce-perchannel-xml/thunar.xml" "$HOME/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml"
+
+	echo "install -Dm644 ./config/thunar/xfce4/helpers.rc $HOME/.config/xfce4/helpers.rc"
+	install -Dm644 "./config/thunar/xfce4/helpers.rc" "$HOME/.config/xfce4/helpers.rc"
+
 
 	echo
 }
@@ -1038,25 +1053,80 @@ sakura_put_my_desktop_entry () {
 
 
 ################################################################################
+### Head: profile
+##
+profile_config_install () {
+
+	echo "## Config: profile"
+	echo
+
+	#echo "mkdir -p $HOME"
+	#mkdir -p "$HOME"
+
+
+	echo "install -Dm644 ./config/profile/.profile $HOME/.profile"
+	install -Dm644 "./config/profile/.profile" "$HOME/.profile"
+
+
+	local now=$(date +%Y%m%d_%s)
+
+	if [ -f "$HOME/.bash_profile" ]; then
+		mv "$HOME/.bash_profile" "$HOME/.bash_profile.bak.$now"
+	fi
+
+	echo
+}
+##
+### Tail: profile
+################################################################################
+
+
+################################################################################
 ### Head: fcitx
 ##
 fcitx_config_install () {
 
-	echo "## Config: fcitx"
 	echo
-
-
 	echo "mkdir -p $HOME/.config/fcitx/conf"
 	mkdir -p "$HOME/.config/fcitx/conf"
 
+	echo
+	echo "mkdir -p $HOME/.config/fcitx/addon"
+	mkdir -p "$HOME/.config/fcitx/addon"
 
+
+	echo
 	echo "install -Dm644 ./config/fcitx/profile $HOME/.config/fcitx/profile"
-	install -Dm644 "./config/fcitx/profile" "$HOME/.config/fcitx/profile"
+	install -Dm644 ./config/fcitx/profile "$HOME/.config/fcitx/profile"
 
 
+	echo
 	echo "install -Dm644 ./config/fcitx/conf/fcitx-classic-ui.config $HOME/.config/fcitx/conf/fcitx-classic-ui.config"
-	install -Dm644 "./config/fcitx/conf/fcitx-classic-ui.config" "$HOME/.config/fcitx/conf/fcitx-classic-ui.config"
+	install -Dm644 ./config/fcitx/conf/fcitx-classic-ui.config "$HOME/.config/fcitx/conf/fcitx-classic-ui.config"
 
+
+	echo
+	echo "install -Dm644 ./config/fcitx/conf/fcitx-chewing.config $HOME/.config/fcitx/conf/fcitx-chewing.config"
+	install -Dm644 ./config/fcitx/conf/fcitx-chewing.config "$HOME/.config/fcitx/conf/fcitx-chewing.config"
+
+
+	echo
+	echo "install -Dm644 ./config/fcitx/conf/fcitx-quickphrase.config $HOME/.config/fcitx/conf/fcitx-quickphrase.config"
+	install -Dm644 ./config/fcitx/conf/fcitx-quickphrase.config "$HOME/.config/fcitx/conf/fcitx-quickphrase.config"
+
+
+	echo
+	echo "install -Dm644 ./config/fcitx/addon/fcitx-kimpanel-ui.conf $HOME/.config/fcitx/addon/fcitx-kimpanel-ui.conf"
+	install -Dm644 ./config/fcitx/addon/fcitx-kimpanel-ui.conf "$HOME/.config/fcitx/addon/fcitx-kimpanel-ui.conf"
+
+	echo
+	echo "install -Dm644 ./config/fcitx/addon/fcitx-quickphrase.conf $HOME/.config/fcitx/addon/fcitx-quickphrase.conf"
+	install -Dm644 ./config/fcitx/addon/fcitx-quickphrase.conf "$HOME/.config/fcitx/addon/fcitx-quickphrase.conf"
+
+
+	echo
+	echo "install -Dm644 ./config/fcitx/addon/fcitx-spell.conf $HOME/.config/fcitx/addon/fcitx-spell.conf"
+	install -Dm644 ./config/fcitx/addon/fcitx-spell.conf "$HOME/.config/fcitx/addon/fcitx-spell.conf"
 
 	fcitx_config_install_im_config
 
@@ -1065,9 +1135,27 @@ fcitx_config_install () {
 }
 
 fcitx_config_install_im_config () {
+	fcitx_config_install_im_config_by_command
+	#fcitx_config_install_im_config_pam_environment
+}
 
-	echo "install -Dm644 ./config/fcitx/.pam_environment $HOME/.pam_environment"
-	install -Dm644 "./config/fcitx/.pam_environment" "$HOME/.pam_environment"
+fcitx_config_install_im_config_by_command () {
+	echo
+
+	echo "im-config -n fcitx"
+	im-config -n fcitx
+
+	echo "cat ~/.xinputrc"
+	cat ~/.xinputrc
+
+	echo
+}
+
+fcitx_config_install_im_config_pam_environment () {
+
+	echo
+	echo "install -m 644 ./config/fcitx/.pam_environment $HOME/.pam_environment"
+	install -m 644 ./config/fcitx/.pam_environment $HOME/.pam_environment
 
 }
 ##
@@ -1148,23 +1236,23 @@ main_config_install () {
 
 	#plank_config_install
 
-	# thunar_config_install
-	#
-	# pcmanfm_qt_config_install
-	#
-	# rofi_config_install
-	#
-	# xfce4_terminal_config_install
-	#
-	# sakura_config_install
-	#
-	# fcitx_config_install
-	#
-	# qt5ct_config_install
-	#
-	# gtk3_config_install
-	#
-	# gtk2_config_install
+	thunar_config_install
+
+	pcmanfm_qt_config_install
+
+	rofi_config_install
+
+	xfce4_terminal_config_install
+
+	sakura_config_install
+
+	fcitx_config_install
+
+	qt5ct_config_install
+
+	gtk3_config_install
+
+	gtk2_config_install
 }
 ## start
 main_config_install
