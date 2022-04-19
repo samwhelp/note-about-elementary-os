@@ -41,11 +41,11 @@ pantheon_set_wallpaper () {
 	echo
 
 	## Wallpaper
-	echo "gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/xfce/palm-wave.jpg'"
-	#gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/xfce/palm-wave.jpg'
+	echo "gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Snow-Capped%20Mountain.jpg'"
+	#gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Snow-Capped%20Mountain.jpg'
 
-	echo "gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/xfce/palm-beach.jpg'"
-	#gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/xfce/palm-beach.jpg'
+	echo "gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Ashim%20DSilva.jpg'"
+	#gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Ashim%20DSilva.jpg'
 
 	echo
 
@@ -58,10 +58,137 @@ pantheon_set_theme () {
 	echo "### pantheon_set_theme"
 	echo
 
+	#pantheon_set_theme_reset
+	#pantheon_set_theme_elementary
 	#pantheon_set_theme_gruvbox
 	#pantheon_set_theme_dracula
 	#pantheon_set_theme_nordic
 	#pantheon_set_theme_matcha_dark_aliz
+}
+
+
+pantheon_set_theme_reset () {
+
+	## Theme Type
+	## $ gsettings list-recursively | grep 'org.gnome.metacity.theme'
+	# org.gnome.metacity.theme name ''
+	# org.gnome.metacity.theme type 'gtk'
+	##
+	#gsettings set org.gnome.metacity.theme type 'gtk'
+
+	## Theme
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+
+	echo "gsettings reset org.gnome.desktop.wm.preferences theme"
+	gsettings reset org.gnome.desktop.wm.preferences theme
+
+	echo "gsettings reset org.gnome.desktop.interface gtk-theme"
+	gsettings reset org.gnome.desktop.interface gtk-theme
+
+	echo "gsettings reset org.gnome.desktop.interface icon-theme"
+	gsettings reset org.gnome.desktop.interface icon-theme
+
+	echo "gsettings reset org.gnome.desktop.interface cursor-theme"
+	gsettings reset org.gnome.desktop.interface cursor-theme
+
+
+	##
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
+	##
+	## ```
+	## org.gnome.desktop.wm.preferences theme 'Adwaita'
+	## org.gnome.desktop.interface icon-theme 'elementary'
+	## org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+	## org.gnome.desktop.interface gtk-key-theme 'Default'
+	## org.gnome.desktop.interface cursor-theme 'elementary'
+	## org.gnome.desktop.sound theme-name 'elementary'
+	## ```
+	##
+
+
+	##
+	## $ ls /usr/share/themes/ -1
+	##
+	## ```
+	## Default
+	## Emacs
+	## io.elementary.stylesheet.banana
+	## io.elementary.stylesheet.blueberry
+	## io.elementary.stylesheet.bubblegum
+	## io.elementary.stylesheet.cocoa
+	## io.elementary.stylesheet.grape
+	## io.elementary.stylesheet.lime
+	## io.elementary.stylesheet.mint
+	## io.elementary.stylesheet.orange
+	## io.elementary.stylesheet.slate
+	## io.elementary.stylesheet.strawberry
+	## Raleigh
+	## ````
+	##
+
+
+	##
+	## $ ls /usr/share/icons/ -1
+	## 
+	## ```
+	## Adwaita
+	## default
+	## elementary
+	## gnome
+	## hicolor
+	## HighContrast
+	## locolor
+	## mozc
+	## ubuntu-mono-dark
+	## ubuntu-mono-light
+	## ```
+	##
+
+
+
+}
+
+
+pantheon_set_theme_elementary () {
+
+	## Theme Type
+	## $ gsettings list-recursively | grep 'org.gnome.metacity.theme'
+	# org.gnome.metacity.theme name ''
+	# org.gnome.metacity.theme type 'gtk'
+	##
+	#gsettings set org.gnome.metacity.theme type 'gtk'
+
+	## Theme
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+
+	echo "gsettings set org.gnome.desktop.wm.preferences theme 'Adwaita'"
+	gsettings set org.gnome.desktop.wm.preferences theme 'Adwaita'
+
+	echo "gsettings set org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'"
+	gsettings set org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+
+	echo "gsettings set org.gnome.desktop.interface icon-theme 'elementary'"
+	gsettings set org.gnome.desktop.interface icon-theme 'elementary'
+
+	echo "gsettings set org.gnome.desktop.interface cursor-theme 'elementary'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
+
+
+	##
+	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
+	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
+	##
+	## ```
+	## org.gnome.desktop.wm.preferences theme 'Adwaita'
+	## org.gnome.desktop.interface icon-theme 'elementary'
+	## org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+	## org.gnome.desktop.interface gtk-key-theme 'Default'
+	## org.gnome.desktop.interface cursor-theme 'elementary'
+	## org.gnome.desktop.sound theme-name 'elementary'
+	## ```
+	##
+
 }
 
 
@@ -87,18 +214,22 @@ pantheon_set_theme_gruvbox () {
 	echo "gsettings set org.gnome.desktop.interface icon-theme 'Gruvbox-Dark'"
 	gsettings set org.gnome.desktop.interface icon-theme 'Gruvbox-Dark'
 
-	echo "gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	echo "gsettings set org.gnome.desktop.interface cursor-theme 'elementary'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
 
 
+	##
 	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
-	# org.gnome.desktop.wm.preferences theme 'Gruvbox'
-	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
-	# org.gnome.desktop.interface icon-theme 'Gruvbox-Dark'
-	# org.gnome.desktop.interface gtk-theme 'Gruvbox'
-	# org.gnome.desktop.interface gtk-key-theme 'Default'
-	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
+	## ```
+	## org.gnome.desktop.wm.preferences theme 'Adwaita'
+	## org.gnome.desktop.interface icon-theme 'elementary'
+	## org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+	## org.gnome.desktop.interface gtk-key-theme 'Default'
+	## org.gnome.desktop.interface cursor-theme 'elementary'
+	## org.gnome.desktop.sound theme-name 'elementary'
+	## ```
 	##
 
 }
@@ -124,18 +255,22 @@ pantheon_set_theme_dracula () {
 	echo "gsettings set org.gnome.desktop.interface icon-theme 'Dracula'"
 	gsettings set org.gnome.desktop.interface icon-theme 'Dracula'
 
-	echo "gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	echo "gsettings set org.gnome.desktop.interface cursor-theme 'elementary'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
 
 
+	##
 	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
-	# org.gnome.desktop.wm.preferences theme 'Dracula'
-	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
-	# org.gnome.desktop.interface icon-theme 'Dracula'
-	# org.gnome.desktop.interface gtk-theme 'Dracula'
-	# org.gnome.desktop.interface gtk-key-theme 'Default'
-	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
+	## ```
+	## org.gnome.desktop.wm.preferences theme 'Adwaita'
+	## org.gnome.desktop.interface icon-theme 'elementary'
+	## org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+	## org.gnome.desktop.interface gtk-key-theme 'Default'
+	## org.gnome.desktop.interface cursor-theme 'elementary'
+	## org.gnome.desktop.sound theme-name 'elementary'
+	## ```
 	##
 
 }
@@ -161,18 +296,22 @@ pantheon_set_theme_nordic () {
 	echo "gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'"
 	gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
-	echo "gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	echo "gsettings set org.gnome.desktop.interface cursor-theme 'elementary'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
 
 
+	##
 	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
-	# org.gnome.desktop.wm.preferences theme 'Nordic'
-	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
-	# org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-	# org.gnome.desktop.interface gtk-theme 'Nordic'
-	# org.gnome.desktop.interface gtk-key-theme 'Default'
-	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
+	## ```
+	## org.gnome.desktop.wm.preferences theme 'Adwaita'
+	## org.gnome.desktop.interface icon-theme 'elementary'
+	## org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+	## org.gnome.desktop.interface gtk-key-theme 'Default'
+	## org.gnome.desktop.interface cursor-theme 'elementary'
+	## org.gnome.desktop.sound theme-name 'elementary'
+	## ```
 	##
 
 }
@@ -198,18 +337,22 @@ pantheon_set_theme_matcha_dark_aliz () {
 	echo "gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'"
 	gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 
-	echo "gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'"
-	gsettings set org.gnome.desktop.interface cursor-theme 'breeze_cursors'
+	echo "gsettings set org.gnome.desktop.interface cursor-theme 'elementary'"
+	gsettings set org.gnome.desktop.interface cursor-theme 'elementary'
 
 
+	##
 	## $ gsettings list-recursively | grep 'theme' | grep 'org.gnome.desktop'
 	## $ gsettings list-recursively | grep 'org.gnome.desktop' | grep 'theme'
-	# org.gnome.desktop.wm.preferences theme 'Nordic'
-	# org.gnome.desktop.interface cursor-theme 'breeze_cursors'
-	# org.gnome.desktop.interface icon-theme 'Papirus-Dark'
-	# org.gnome.desktop.interface gtk-theme 'Nordic'
-	# org.gnome.desktop.interface gtk-key-theme 'Default'
-	# org.gnome.desktop.sound theme-name 'ubuntu'
+	##
+	## ```
+	## org.gnome.desktop.wm.preferences theme 'Adwaita'
+	## org.gnome.desktop.interface icon-theme 'elementary'
+	## org.gnome.desktop.interface gtk-theme 'io.elementary.stylesheet.blueberry'
+	## org.gnome.desktop.interface gtk-key-theme 'Default'
+	## org.gnome.desktop.interface cursor-theme 'elementary'
+	## org.gnome.desktop.sound theme-name 'elementary'
+	## ```
 	##
 
 }
