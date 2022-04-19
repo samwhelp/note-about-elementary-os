@@ -15,7 +15,7 @@ pantheon_config_install () {
 	pantheon_set_wallpaper
 
 	pantheon_set_theme
-	
+
 	pantheon_set_desktop_corner_behavior
 
 	pantheon_set_keybindings_screensaver
@@ -25,6 +25,8 @@ pantheon_config_install () {
 	pantheon_set_keybindings_pip
 
 	pantheon_set_keybindings_start_here
+
+	pantheon_set_keybindings_terminal
 
 	pantheon_set_keybindings_about_window
 
@@ -421,6 +423,23 @@ pantheon_set_keybindings_pip () {
 
 	echo 'gsettings set org.pantheon.desktop.gala.keybindings pip "'"['<Super>p']"'"'
 	gsettings set org.pantheon.desktop.gala.keybindings pip "['<Super>p']"
+}
+
+
+
+
+pantheon_set_keybindings_terminal () {
+
+	echo
+	echo "### pantheon_set_keybindings_start_here"
+	echo
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
+
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F2']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F2']"
+
 }
 
 
