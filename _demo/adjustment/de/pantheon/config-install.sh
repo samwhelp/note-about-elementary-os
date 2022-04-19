@@ -376,14 +376,14 @@ pantheon_set_desktop_corner_behavior () {
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'
 	
-	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'switch-to-workspace-last'"
-	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'switch-to-workspace-last'
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'custom-command'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'custom-command'
 	
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'show-workspace-view'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'show-workspace-view'
 	
-	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'custom-command'"
-	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'custom-command'
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'switch-to-workspace-last'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'switch-to-workspace-last'
 
 
 }
