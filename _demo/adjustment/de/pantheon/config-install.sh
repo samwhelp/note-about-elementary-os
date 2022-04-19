@@ -441,11 +441,19 @@ pantheon_set_keybindings_terminal () {
 
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F2']"'"'
 	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F2']"
-	
-	
+
+
+	## gsettings list-recursively | grep io.elementary.terminal.settings
+
 	echo "gsettings set io.elementary.terminal.settings follow-last-tab true"
 	gsettings set io.elementary.terminal.settings follow-last-tab true
-	
+
+	echo "gsettings set io.elementary.terminal.settings background 'rgba(0, 0, 0, 0.85)'"
+	gsettings set io.elementary.terminal.settings background 'rgba(0, 0, 0, 0.85)'
+
+	echo "gsettings set io.elementary.terminal.settings font 'Monospace 16'"
+	gsettings set io.elementary.terminal.settings font 'Monospace 16'
+
 
 }
 
