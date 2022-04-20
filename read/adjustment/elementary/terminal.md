@@ -1,6 +1,6 @@
 ---
 title: io.elementary.terminal
-nav_order: 5001
+nav_order: 5010
 has_children: false
 parent: Elementary OS 微調
 grand_parent: 微調
