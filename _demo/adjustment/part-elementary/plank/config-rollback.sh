@@ -15,50 +15,17 @@ net_launchpad_plank_config_rollback () {
 	echo
 
 
-	echo "gsettings reset io.elementary.code.settings spaces-instead-of-tabs"
-	gsettings reset io.elementary.code.settings spaces-instead-of-tabs
+	echo "gsettings reset net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ hide-mode"
+	gsettings reset net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ hide-mode
+
+	echo "gsettings reset net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ auto-pinning"
+	gsettings reset net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ auto-pinning
+
+	echo "gsettings reset net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ dock-items"
+	gsettings reset net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ dock-items
 
 
 
-	## Style
-	echo "gsettings reset io.elementary.code.settings style-scheme"
-	gsettings reset io.elementary.code.settings style-scheme
-
-
-	echo "gsettings reset io.elementary.code.settings prefer-dark-style"
-	gsettings reset io.elementary.code.settings prefer-dark-style
-
-
-	## Font
-	echo "gsettings reset io.elementary.code.settings use-system-font"
-	gsettings reset io.elementary.code.settings use-system-font
-
-	echo "gsettings reset io.elementary.code.settings font"
-	gsettings reset io.elementary.code.settings font
-
-
-
-	echo "gsettings reset io.elementary.code.settings highlight-matching-brackets"
-	gsettings reset io.elementary.code.settings highlight-matching-brackets
-
-
-	echo "gsettings reset io.elementary.code.settings show-right-margin"
-	gsettings reset io.elementary.code.settings show-right-margin
-
-
-	echo "gsettings reset io.elementary.code.settings draw-spaces"
-	gsettings reset io.elementary.code.settings draw-spaces
-
-
-	echo "gsettings reset io.elementary.code.settings cyclic-search"
-	gsettings reset io.elementary.code.settings cyclic-search
-
-	echo "gsettings reset io.elementary.code.settings autosave"
-	gsettings reset io.elementary.code.settings autosave
-
-
-	echo "gsettings reset io.elementary.code.settings plugins-enabled"
-	gsettings reset io.elementary.code.settings plugins-enabled
 
 	echo
 }

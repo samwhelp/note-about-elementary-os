@@ -24,6 +24,9 @@ net_launchpad_plank_config_install () {
 	gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ hide-mode 'none'
 
 
+	echo "gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ auto-pinning false"
+	gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ auto-pinning false
+
 
 	# gsettings get net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ dock-items
 
@@ -31,8 +34,7 @@ net_launchpad_plank_config_install () {
 	gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ dock-items "['gala-multitaskingview.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.files.dockitem', 'io.elementary.terminal.dockitem', 'io.elementary.code.dockitem', 'firefox.dockitem', 'pcmanfm-qt.dockitem', 'sakura.dockitem', 'io.elementary.appcenter.dockitem']"
 
 
-	echo "gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ auto-pinning false"
-	gsettings set net.launchpad.plank.dock.settings:/net/launchpad/plank/docks/dock1/ auto-pinning false
+
 
 
 	net_launchpad_plank_config_install_launchers
