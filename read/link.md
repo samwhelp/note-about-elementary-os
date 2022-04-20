@@ -17,6 +17,7 @@ has_children: true
 ## Article
 
 * [https://blogs.gnome.org/alexm/2021/10/04/dark-style-preference/](https://blogs.gnome.org/alexm/2021/10/04/dark-style-preference/)
+* [https://gitlab.gnome.org/GNOME/Initiatives/-/wikis/Dark-Style-Preference](https://gitlab.gnome.org/GNOME/Initiatives/-/wikis/Dark-Style-Preference)
 
 
 ## Keyword
