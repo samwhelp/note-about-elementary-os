@@ -43,7 +43,7 @@ or
 
 ``` sh
 $ make config-install
-
+```
 
 ## Explore
 
