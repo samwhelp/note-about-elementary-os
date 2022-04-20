@@ -146,6 +146,27 @@ use-system-font=false
 * /usr/share/glib-2.0/schemas/io.elementary.code.gschema.override
 * ~/.config/dconf/user
 
+## styles
+
+run
+
+``` sh
+dpkg -L libgtksourceview-4-common | grep 'styles/'
+```
+
+show
+
+```
+/usr/share/gtksourceview-4/styles/classic.xml
+/usr/share/gtksourceview-4/styles/cobalt.xml
+/usr/share/gtksourceview-4/styles/kate.xml
+/usr/share/gtksourceview-4/styles/oblivion.xml
+/usr/share/gtksourceview-4/styles/solarized-dark.xml
+/usr/share/gtksourceview-4/styles/solarized-light.xml
+/usr/share/gtksourceview-4/styles/styles.rng
+/usr/share/gtksourceview-4/styles/tango.xml
+```
+
 
 ## Package
 

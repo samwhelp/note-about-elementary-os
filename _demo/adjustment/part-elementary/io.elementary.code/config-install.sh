@@ -23,12 +23,53 @@ io_elementary_code_config_install () {
 
 
 	## Style
-	echo "gsettings set io.elementary.code.settings style-scheme 'solarized-dark'"
-	gsettings set io.elementary.code.settings style-scheme 'solarized-dark'
-
 
 	echo "gsettings set io.elementary.code.settings prefer-dark-style true"
 	gsettings set io.elementary.code.settings prefer-dark-style true
+
+	##
+	## run
+	##
+	## ``` sh
+	## dpkg -L libgtksourceview-4-common | grep 'styles/'
+	## ```
+	##
+	## show
+	##
+	## ```
+	## /usr/share/gtksourceview-4/styles/classic.xml
+	## /usr/share/gtksourceview-4/styles/cobalt.xml
+	## /usr/share/gtksourceview-4/styles/kate.xml
+	## /usr/share/gtksourceview-4/styles/oblivion.xml
+	## /usr/share/gtksourceview-4/styles/solarized-dark.xml
+	## /usr/share/gtksourceview-4/styles/solarized-light.xml
+	## /usr/share/gtksourceview-4/styles/styles.rng
+	## /usr/share/gtksourceview-4/styles/tango.xml
+	## ```
+	##
+
+	echo "gsettings set io.elementary.code.settings style-scheme 'oblivion'"
+	gsettings set io.elementary.code.settings style-scheme 'oblivion'
+
+	#echo "gsettings set io.elementary.code.settings style-scheme 'solarized-dark'"
+	#gsettings set io.elementary.code.settings style-scheme 'solarized-dark'
+
+	#echo "gsettings set io.elementary.code.settings style-scheme 'solarized-light'"
+	#gsettings set io.elementary.code.settings style-scheme 'solarized-light'
+
+	#echo "gsettings set io.elementary.code.settings style-scheme 'classic'"
+	#gsettings set io.elementary.code.settings style-scheme 'classic'
+
+	#echo "gsettings set io.elementary.code.settings style-scheme 'cobalt'"
+	#gsettings set io.elementary.code.settings style-scheme 'cobalt'
+
+	#echo "gsettings set io.elementary.code.settings style-scheme 'kate'"
+	#gsettings set io.elementary.code.settings style-scheme 'kate'
+
+	#echo "gsettings set io.elementary.code.settings style-scheme 'tango'"
+	#gsettings set io.elementary.code.settings style-scheme 'tango'
+
+
 
 
 	## Font
