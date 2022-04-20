@@ -37,3 +37,12 @@ parent: 微調
 | --- | --- |
 | [desktop_corner_behavior](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/desktop_corner_behavior.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/desktop_corner_behavior) |
 
+
+
+## Tweaks
+
+| Tweaks | 安裝腳本 |
+| --- | --- |
+| [pantheon-tweaks](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/pantheon-tweaks.html) | [安裝腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/pantheon-tweaks) |
+
+

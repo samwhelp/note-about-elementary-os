@@ -9,7 +9,7 @@ grand_parent: 微調
 
 # pantheon-tweaks
 
-* [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/io.elementary.terminal)
+* [安裝腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/pantheon-tweaks)
 
 
 ## 相關連結
