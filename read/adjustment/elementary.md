@@ -30,3 +30,10 @@ parent: 微調
 | --- | --- |
 | [net.launchpad.plank](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/plank.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/plank) |
 
+
+## Desktop Corner Behavior
+
+| Desktop Corner Behavior | 微調腳本 |
+| --- | --- |
+| [desktop_corner_behavior](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/desktop_corner_behavior.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/desktop_corner_behavior) |
+
