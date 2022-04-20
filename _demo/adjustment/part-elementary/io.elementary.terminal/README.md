@@ -77,3 +77,41 @@ io.elementary.terminal.settings foreground '#a5a5a5'
 io.elementary.terminal.settings cursor-color '#839496'
 io.elementary.terminal.settings audible-bell false
 ```
+
+
+run
+
+``` sh
+dconf dump /io/elementary/terminal/settings/
+```
+
+show
+
+```
+[/]
+background='rgba(0, 0, 0, 0.85)'
+follow-last-tab=true
+font='Monospace 16'
+```
+
+run
+
+``` sh
+dconf dump / | grep 'io/elementary/terminal/settings' -A 4
+```
+
+show
+
+```
+[io/elementary/terminal/settings]
+background='rgba(0, 0, 0, 0.85)'
+follow-last-tab=true
+font='Monospace 16'
+```
+
+
+## gschema
+
+* /usr/share/glib-2.0/schemas/io.elementary.terminal.gschema.xml
+* /usr/share/glib-2.0/schemas/io.elementary.terminal.gschema.override
+* ~/.config/dconf/user

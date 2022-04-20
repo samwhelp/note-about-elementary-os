@@ -1,0 +1,6 @@
+
+[io.elementary.terminal.settings]
+background='rgba(0, 0, 0, 0.85)'
+follow-last-tab=true
+font='Monospace 16'
+
