@@ -8,7 +8,11 @@ set -e
 ##
 io_elementary_terminal_config_rollback () {
 
+
+	echo
+	echo "##"
 	echo "## Config: io_elementary_terminal"
+	echo "##"
 	echo
 
 

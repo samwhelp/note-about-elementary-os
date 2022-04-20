@@ -8,7 +8,10 @@ set -e
 ##
 io_elementary_terminal_config_install () {
 
+	echo
+	echo "##"
 	echo "## Config: io_elementary_terminal"
+	echo "##"
 	echo
 
 	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'

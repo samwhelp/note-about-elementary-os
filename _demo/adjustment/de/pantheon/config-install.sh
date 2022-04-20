@@ -136,7 +136,7 @@ pantheon_set_theme_reset () {
 
 	##
 	## $ ls /usr/share/icons/ -1
-	## 
+	##
 	## ```
 	## Adwaita
 	## default
@@ -372,16 +372,16 @@ pantheon_set_desktop_corner_behavior () {
 
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'
-	
+
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'
-	
+
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'custom-command'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topright 'custom-command'
-	
+
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'show-workspace-view'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomleft 'show-workspace-view'
-	
+
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'switch-to-workspace-last'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'switch-to-workspace-last'
 
@@ -469,14 +469,14 @@ pantheon_set_keybindings_volume_control () {
 
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "'"['AudioLowerVolume']"'"'
 	gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "['AudioLowerVolume']"
-	
+
 
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "'"['AudioRaiseVolume']"'"'
 	gsettings set org.gnome.settings-daemon.plugins.media-keys volume-up "['AudioRaiseVolume']"
-	
+
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys volume-down "'"['AudioMute']"'"'
 	gsettings set org.gnome.settings-daemon.plugins.media-keys volume-mute "['AudioMute']"
-	
+
 
 }
 
@@ -568,7 +568,7 @@ pantheon_set_keybindings_switch_windows () {
 
 	echo 'gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "'"['<Super>a', '<Super>h', '<Super>Left']"'"'
 	gsettings set org.gnome.desktop.wm.keybindings switch-windows-backward "['<Super>a', '<Super>h', '<Super>Left']"
-	
+
 	echo 'gsettings set org.gnome.desktop.wm.keybindings switch-windows "'"['<Super>s', '<Super>l', '<Super>Right']"'"'
 	gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Super>s', '<Super>l', '<Super>Right']"
 

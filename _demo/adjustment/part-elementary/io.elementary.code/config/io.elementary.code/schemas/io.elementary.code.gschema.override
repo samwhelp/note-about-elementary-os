@@ -1,0 +1,14 @@
+
+[io.elementary.code.settings]
+autosave=false
+cyclic-search=true
+draw-spaces='Always'
+font='Monospace 14'
+highlight-matching-brackets=false
+plugins-enabled=['word-completion', 'terminal', 'strip-trailing-save', 'outline', 'markdown-actions', 'editorconfig', 'detect-indent', 'brackets-completion']
+prefer-dark-style=true
+show-mini-map=false
+show-right-margin=true
+spaces-instead-of-tabs=false
+style-scheme='solarized-dark'
+use-system-font=false
