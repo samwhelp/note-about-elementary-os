@@ -20,6 +20,8 @@ help:
 	@echo
 	@echo '	$$ make config-install'
 	@echo
+	@echo '	$$ make test'
+	@echo
 
 
 .PHONY: help
@@ -48,3 +50,8 @@ config-install:
 package-install:
 	@./package-install.sh
 .PHONY: package-install
+
+
+test:
+	@./test.sh
+.PHONY: test

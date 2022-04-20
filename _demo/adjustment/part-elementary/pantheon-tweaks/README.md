@@ -2,10 +2,37 @@
 # pantheon-tweaks
 
 
+## Link
+
+* [https://github.com/pantheon-tweaks/pantheon-tweaks](https://github.com/pantheon-tweaks/pantheon-tweaks)
 
 
 ## Howto
 
+
+### prepare
+
+``` sh
+$ ./prepare.sh
+```
+
+or
+
+``` sh
+$ make prepare
+```
+
+### ppa-add
+
+``` sh
+$ ./ppa-add.sh
+```
+
+or
+
+``` sh
+$ make ppa-add
+```
 
 ### install
 
@@ -44,6 +71,13 @@ or
 ``` sh
 $ make config-install
 ```
+
+## Test
+
+``` sh
+io.elementary.switchboard settings://tweaks
+```
+
 
 ## Explore
 
