@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+
+set -e
+
+
+################################################################################
+### Head: io_elementary_files
+##
+io_elementary_files_config_rollback () {
+
+
+	echo
+	echo "##"
+	echo "## Config: io_elementary_files"
+	echo "##"
+	echo
+
+
+	## gsettings list-recursively | grep io.elementary.files.preferences
+
+	echo "gsettings reset io.elementary.files.preferences default-viewmode"
+	gsettings reset io.elementary.files.preferences default-viewmode
+
+	echo
+}
+##
+### Tail: io_elementary_files
+################################################################################
+
+
+################################################################################
+### Head: main
+##
+main_config_rollback () {
+	io_elementary_files_config_rollback
+}
+## start
+main_config_rollback
+
+##
+### Tail: main
+################################################################################
