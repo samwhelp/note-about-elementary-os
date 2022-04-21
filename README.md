@@ -36,12 +36,18 @@
 | [io.elementary.terminal](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/terminal.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/io.elementary.terminal) |
 
 
-
 ### Text Editor
 
 | Text Editor | 微調腳本 |
 | --- | --- |
 | [io.elementary.code](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/code.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/io.elementary.code) |
+
+
+### File Manager
+
+| File Manager | 微調腳本 |
+| --- | --- |
+| [io.elementary.files](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/files.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/io.elementary.files) |
 
 
 ### Panel Or Dock

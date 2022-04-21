@@ -11,6 +11,18 @@ parent: 微調
 * [pantheon微調](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html)
 
 
+## 主題
+
+* [Terminal](#terminal)
+* [Text Editor](#text-editor)
+* [File Manager](#file-manager)
+* [Panel Or Dock](#panel-or-dock)
+* [Desktop Corner Behavior](#desktop-corner-behavior)
+* [Keybindings](#keybindings)
+* [Tweaks](#tweaks)
+*
+
+
 ## Terminal
 
 | Terminal | 微調腳本 |
@@ -24,6 +36,13 @@ parent: 微調
 | Text Editor | 微調腳本 |
 | --- | --- |
 | [io.elementary.code](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/code.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/io.elementary.code) |
+
+
+## File Manager
+
+| File Manager | 微調腳本 |
+| --- | --- |
+| [io.elementary.files](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/files.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/io.elementary.files) |
 
 
 ## Panel Or Dock
