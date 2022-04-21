@@ -16,5 +16,8 @@ grand_parent: 微調
 | -------------------------- | ------------------------ | --------------------------------------------------- |
 | 滑鼠游標移到「桌面左上角」 | 開啟應用程式啟動器       | (內建) `open-launcher`                              |
 | 滑鼠游標移到「桌面左下角」 | 切換到「workspace-view」 | (內建) `show-workspace-view`                        |
-| 滑鼠游標移到「桌面右上角」 | 開啟「Terminal」         | (內建) `custom-command` => `io.elementary.terminal` |
+| 滑鼠游標移到「桌面右上角」 | 開啟「Terminal」         | (內建) `custom-command` => `toggle-show-desktop.sh` |
 | 滑鼠游標移到「桌面右上角」 | 切換到「新的工作區」     | (內建) `switch-to-workspace-last`                   |
+
+
+> [toggle-show-desktop.sh](https://github.com/samwhelp/note-about-elementary-os/blob/gh-pages/_demo/adjustment/part-elementary/desktop_corner_behavior/config/toggle-show-desktop/toggle-show-desktop.sh) ([相關文章](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/openbox/openbox-toggle-show-desktop))

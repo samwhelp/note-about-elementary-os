@@ -18,10 +18,10 @@ grand_parent: 微調
 
 | 按鍵組合   | 功能           | 執行指令                        |
 | ---------- | -------------- | ------------------------------- |
-| `Alt + F1` | 開啟檔案管理器 | `io.elementary.files`           |
-| `Alt + F2` | 開啟檔文字編輯 | `io.elementary.code`            |
-| `Alt + F3` | 開啟網頁瀏覽器 | `firefox --new-tab about:blank` |
-| `Alt + F4` | 開啟終端機     | `io.elementary.terminal`        |
+| `Win + F1` | 開啟檔案管理器 | `io.elementary.files`           |
+| `Win + F2` | 開啟檔文字編輯 | `io.elementary.code`            |
+| `Win + F3` | 開啟網頁瀏覽器 | `firefox --new-tab about:blank` |
+| `Win + F4` | 開啟終端機     | `io.elementary.terminal`        |
 
 
 > 若已經開啟，在同一個「工作空間」，再次按下，可以聚焦到該「應用程式」。
@@ -37,3 +37,12 @@ grand_parent: 微調
 
 > 採用工具：「[wallpaper-select-gnome](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-gnome.html)」
 
+
+### 顯示桌面
+
+| 按鍵組合   | 功能           | 執行指令                        |
+| ---------- | -------------- | ------------------------------- |
+| `Win + d` | 切換顯示桌面 | `toggle-show-desktop.sh`           |
+
+
+> [toggle-show-desktop.sh](https://github.com/samwhelp/note-about-elementary-os/blob/gh-pages/_demo/adjustment/part-elementary/keybindings_custom/config/toggle-show-desktop/toggle-show-desktop.sh) ([相關文章](https://samwhelp.github.io/note-ubuntu-18.04/read/subject/openbox/openbox-toggle-show-desktop))
