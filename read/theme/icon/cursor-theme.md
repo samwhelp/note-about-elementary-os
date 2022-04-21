@@ -16,7 +16,7 @@ parent: 佈景主題
 
 ## 設定檔路徑
 
-請參考「[另一篇](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html#)」的說明。
+請參考「[另一篇](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html#設定檔路徑)」的說明。
 
 
 ## 輔助工具 / 指令操作
@@ -102,7 +102,7 @@ gsettings reset org.gnome.desktop.interface cursor-size
 
 ## 輔助工具 / 圖形界面操作
 
-請參考「[另一篇](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html#)」的說明。
+請參考「[另一篇](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html#圖形界面工具)」的說明。
 
 
 ## Link
