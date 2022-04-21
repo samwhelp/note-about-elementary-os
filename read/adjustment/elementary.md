@@ -40,9 +40,9 @@ parent: 微調
 
 ## Keybindings
 
-| Keybindings | 微調腳本 |
+| Keybindings | 按鍵綁定腳本 |
 | --- | --- |
-| [keybindings_custom](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/keybindings_custom.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/keybindings_custom) |
+| [keybindings_custom](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/keybindings_custom.html) | [按鍵綁定腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/keybindings_custom) |
 
 
 ## Tweaks

@@ -11,4 +11,3 @@ grand_parent: 微調
 
 * [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/desktop_corner_behavior)
 
-

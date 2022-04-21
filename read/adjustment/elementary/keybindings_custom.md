@@ -9,7 +9,7 @@ grand_parent: 微調
 
 # keybindings_custom
 
-* [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/keybindings_custom)
+* [按鍵綁定腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/keybindings_custom)
 
 
 ## 按鍵綁定
@@ -36,3 +36,4 @@ grand_parent: 微調
 
 
 > 採用工具：「[wallpaper-select-gnome](https://samwhelp.github.io/note-about-fzf/read/project/wallpaper-select/wallpaper-select-gnome.html)」
+
