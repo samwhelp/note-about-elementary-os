@@ -234,3 +234,10 @@ gsettings reset org.gnome.desktop.interface cursor-theme
 ``` sh
 gsettings reset org.gnome.desktop.interface cursor-size
 ```
+
+
+
+## Arch Wiki
+
+* [Pantheon](https://wiki.archlinux.org/title/Pantheon)
+
