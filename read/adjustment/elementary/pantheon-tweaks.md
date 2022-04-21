@@ -72,6 +72,35 @@ io.elementary.switchboard settings://desktop/appearance/wallpaper
 
 接著在「Terminal」執行「`ps aux | grep switchboard`」，就會找到該指令。
 
+後來發現，可以在[原始碼](https://github.com/pantheon-tweaks/pantheon-tweaks/blob/dev/src/Tweaks.vala#L28)，找到更多的「頁面路徑參數」來選用。
+
+``` sh
+io.elementary.switchboard settings://tweaks
+```
+
+``` sh
+io.elementary.switchboard settings://tweaks/appearance
+```
+
+``` sh
+io.elementary.switchboard settings://tweaks/fonts
+```
+
+``` sh
+io.elementary.switchboard settings://tweaks/animations
+```
+
+``` sh
+io.elementary.switchboard settings://tweaks/misc
+```
+
+``` sh
+io.elementary.switchboard settings://tweaks/files
+```
+
+``` sh
+io.elementary.switchboard settings://tweaks/terminal
+```
 
 ## Package
 
