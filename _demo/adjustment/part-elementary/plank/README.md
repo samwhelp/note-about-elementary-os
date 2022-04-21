@@ -98,7 +98,7 @@ show
 net.launchpad.plank.dock.settings alignment 'center'
 net.launchpad.plank.dock.settings auto-pinning true
 net.launchpad.plank.dock.settings current-workspace-only false
-net.launchpad.plank.dock.settings dock-items ['gala-multitaskingview.dockitem', 'org.gnome.Epiphany.dockitem', 'io.elementary.mail.dockitem', 'io.elementary.tasks.dockitem', 'io.elementary.calendar.dockitem', 'io.elementary.music.dockitem', 'io.elementary.videos.dockitem', 'io.elementary.photos.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.appcenter.dockitem']
+net.launchpad.plank.dock.settings dock-items ['desktop.dockitem', 'gala-multitaskingview.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.files.dockitem', 'io.elementary.code.dockitem', 'firefox.dockitem', 'io.elementary.terminal.dockitem', 'io.elementary.appcenter.dockitem']
 net.launchpad.plank.dock.settings hide-delay 500
 net.launchpad.plank.dock.settings hide-mode 'window-dodge'
 net.launchpad.plank.dock.settings icon-size 48
@@ -130,7 +130,7 @@ show
 net.launchpad.plank.dock.settings alignment 'center'
 net.launchpad.plank.dock.settings auto-pinning true
 net.launchpad.plank.dock.settings current-workspace-only false
-net.launchpad.plank.dock.settings dock-items ['gala-multitaskingview.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.files.dockitem', 'io.elementary.terminal.dockitem', 'io.elementary.code.dockitem', 'firefox.dockitem', 'pcmanfm-qt.dockitem', 'sakura.dockitem', 'io.elementary.appcenter.dockitem']
+net.launchpad.plank.dock.settings dock-items ['desktop.dockitem', 'gala-multitaskingview.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.files.dockitem', 'io.elementary.code.dockitem', 'firefox.dockitem', 'io.elementary.terminal.dockitem', 'io.elementary.appcenter.dockitem']
 net.launchpad.plank.dock.settings hide-delay 500
 net.launchpad.plank.dock.settings hide-mode 'auto'
 net.launchpad.plank.dock.settings icon-size 48
