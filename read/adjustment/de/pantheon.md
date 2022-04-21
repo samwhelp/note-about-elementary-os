@@ -33,9 +33,9 @@ grand_parent: 微調
 
 | 項目 | 佈景主題 | 指令 |
 | --- | --- | --- |
-| [ui-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/theme/ui-theme.html) (gtk-theme) | [io.elementary.stylesheet.blueberry](https://github.com/elementary/stylesheet) | ([set](#ui-theme-set)) ([get](#ui-theme-get)) |
-| [icon-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/icon/icon-theme.html) | [elementary](https://github.com/elementary/icons)) |
-| [cursor-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/icon/cursor-theme.html) | [elementary](https://github.com/elementary/icons/tree/master/cursors) | ([set](#cursor-theme-set)) ([get](#cursor-theme-get)) |
+| [ui-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/theme/ui-theme.html) (gtk-theme) | [io.elementary.stylesheet.blueberry](https://github.com/elementary/stylesheet) | ([set](#ui-theme-set)) ([get](#ui-theme-get)) ([reset](#ui-theme-reset)) |
+| [icon-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/icon/icon-theme.html) | [elementary](https://github.com/elementary/icons) | ([set](#icon-theme-set)) ([get](#icon-theme-get)) ([reset](#icon-theme-reset)) |
+| [cursor-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/icon/cursor-theme.html) | [elementary](https://github.com/elementary/icons/tree/master/cursors) | ([set](#cursor-theme-set)) ([get](#cursor-theme-get)) ([reset](#cursor-theme-reset)) |
 
 
 ## 圖形界面工具
