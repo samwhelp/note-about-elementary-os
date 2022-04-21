@@ -53,63 +53,10 @@ toggle_show_desktop_asset_install_desktop_entry () {
 
 
 ################################################################################
-### Head: wallpaper_select
-##
-wallpaper_select_asset_install () {
-
-	echo
-	echo "##"
-	echo "## Asset: wallpaper_select"
-	echo "##"
-	echo
-
-	wallpaper_select_asset_install_wallpaper_select_gnome
-
-	echo
-
-}
-
-##
-### Tail: wallpaper_select
-################################################################################
-
-
-################################################################################
-### Head: wallpaper_select_gnome
-##
-wallpaper_select_asset_install_wallpaper_select_gnome () {
-
-
-	echo
-
-	if [ -a "$HOME/.local/bin/wallpaper-select-gnome" ]; then
-		echo
-		echo "## Tool Exists:" "$HOME/.local/bin/wallpaper-select-gnome"
-		echo
-		return 0
-	fi
-
-	echo
-
-	echo "wget 'https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-gnome/remote-install.sh' -q -O - | bash"
-	wget 'https://raw.githubusercontent.com/samwhelp/note-about-fzf/gh-pages/_demo/project/wallpaper-select/wallpaper-select-gnome/remote-install.sh' -q -O - | bash
-
-
-	echo
-
-}
-
-##
-### Tail: wallpaper_select_gnome
-################################################################################
-
-
-################################################################################
 ### Head: main
 ##
 main_asset_install () {
 	toggle_show_desktop_asset_install
-	wallpaper_select_asset_install
 }
 ## start
 main_asset_install

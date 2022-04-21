@@ -14,8 +14,22 @@ desktop_corner_behavior_config_install () {
 	echo "##"
 	echo
 
-	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'"
-	gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'
+	pantheon_set_desktop_corner_behavior
+
+
+	echo
+}
+
+
+pantheon_set_desktop_corner_behavior () {
+
+	echo
+	echo "### pantheon_set_desktop_corner_behavior"
+	echo
+
+
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'toggle-show-desktop.sh'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'toggle-show-desktop.sh'
 
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'
@@ -30,8 +44,8 @@ desktop_corner_behavior_config_install () {
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-bottomright 'switch-to-workspace-last'
 
 
-	echo
 }
+
 ##
 ### Tail: desktop_corner_behavior
 ################################################################################

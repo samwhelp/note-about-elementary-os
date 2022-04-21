@@ -365,13 +365,14 @@ pantheon_set_theme_matcha_dark_aliz () {
 
 
 pantheon_set_desktop_corner_behavior () {
+
 	echo
 	echo "### pantheon_set_desktop_corner_behavior"
 	echo
 
 
-	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'"
-	gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'io.elementary.terminal'
+	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'toggle-show-desktop.sh'"
+	gsettings set org.pantheon.desktop.gala.behavior hotcorner-custom-command 'toggle-show-desktop.sh'
 
 	echo "gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'"
 	gsettings set org.pantheon.desktop.gala.behavior hotcorner-topleft 'open-launcher'
@@ -755,7 +756,7 @@ pantheon_set_keybindings_about_workspace () {
 pantheon_set_keybindings_custom () {
 
 	## Custom Keybindings
-	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/']"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/']"
 
 
 	##
@@ -777,6 +778,20 @@ pantheon_set_keybindings_custom () {
 
 	## Dump all
 	#dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
+
+	# clear '<Super>t'
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+
+
 
 
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys help "['', '<Super>F1']"
@@ -807,6 +822,9 @@ pantheon_set_keybindings_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/binding "'<Super>F4'"
 
 
+
+
+
 	## Wallpaper Shuf
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/name "'Wallpaper-Shuf'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/command "'wallpaper-select-gnome shuf_favorite'"
@@ -816,6 +834,25 @@ pantheon_set_keybindings_custom () {
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/name "'Wallpaper-Default'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/command "'wallpaper-select-gnome default'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/binding "'<Control><Alt>w'"
+
+
+
+	## Toggle Show Desktop
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/name "'Toggle-Show-Desktop'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/command "'toggle-show-desktop.sh'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/binding "'<Super>d'"
+
+
+
+	echo
+	echo "##"
+	echo "## Dump: keybindings_custom"
+	echo "##"
+	echo
+	echo "dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/"
+	echo
+	dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+	echo
 
 }
 
