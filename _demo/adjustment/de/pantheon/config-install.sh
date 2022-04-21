@@ -48,10 +48,10 @@ pantheon_set_wallpaper () {
 
 	## Wallpaper
 	echo "gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Snow-Capped%20Mountain.jpg'"
-	#gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Snow-Capped%20Mountain.jpg'
+	gsettings set org.gnome.desktop.background picture-uri 'file:///usr/share/backgrounds/Snow-Capped%20Mountain.jpg'
 
 	echo "gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Ashim%20DSilva.jpg'"
-	#gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Ashim%20DSilva.jpg'
+	gsettings set org.gnome.desktop.screensaver picture-uri 'file:///usr/share/backgrounds/Ashim%20DSilva.jpg'
 
 	echo
 
@@ -439,8 +439,13 @@ pantheon_set_keybindings_terminal () {
 	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
 
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
+
+	## use custom-keybindings. please check pantheon_set_keybindings_custom
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+
 
 
 	## gsettings list-recursively | grep io.elementary.terminal.settings
@@ -744,10 +749,154 @@ pantheon_set_keybindings_about_workspace () {
 }
 
 
-pantheon_set_keybindings_custom () {
+pantheon_set_keybindings_custom_v0 () {
 
 	## Custom Keybindings
-	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-control/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-toggle-mute/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/']"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/']"
+
+
+	##
+	## $ gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/
+	##
+	## ```
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding command ''
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding name ''
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding binding ''
+	## ```
+	##
+	## $ gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+	##
+	##
+
+
+	## Clear old
+	#dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+	## Dump all
+	#dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+
+	## File Manager
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/name "'File_Manager-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/command "'io.elementary.files'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/binding "'<Super>F1'"
+
+
+	## Text Editor
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/name "'Text_Editor-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/command "'io.elementary.code'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/binding "'<Super>F2'"
+
+	## Web Browser
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/name "'Web_Browser-0'"
+	#dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "'firefox'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "''"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/binding "'<Super>F3'"
+
+	## Terminal
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/name "'Terminal-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/command "'io.elementary.terminal'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/binding "'<Super>F4'"
+
+
+}
+
+
+pantheon_set_keybindings_custom () {
+
+
+	echo
+	echo "##"
+	echo "## ## pantheon_set_keybindings_custom"
+	echo "##"
+	echo
+
+	## Custom Keybindings
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/']"
+
+
+	##
+	## $ gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/
+	##
+	## ```
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding command ''
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding name ''
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding binding ''
+	## ```
+	##
+	## $ gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+	##
+	##
+
+
+	## Clear old
+	#dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+	## Dump all
+	#dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+
+	## File Manager
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/ name "'File_Manager-0'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/ command "'io.elementary.files'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/ binding "'<Super>F1'"
+
+	#gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/
+	#gsettings reset-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/
+
+
+
+	## Text Editor
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/ name "'Text_Editor-0'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/ command "'io.elementary.code'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/ binding "'<Super>F2'"
+
+	## Web Browser
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ name "'Web_Browser-0'"
+	#dgsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ command "'firefox'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ command "''"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ binding "'<Super>F3'"
+
+	## Terminal
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/ name "'Terminal-0'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/ command "'io.elementary.terminal'"
+	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/ binding "'<Super>F4'"
+
+
+}
+
+
+pantheon_set_keybindings_custom_old () {
+
+	## Custom Keybindings
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-4/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-run/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-window/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/rofi-show-drun/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/editor/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files-1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/settings-shortcuts/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-control/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-toggle-mute/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-decrease-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/volume-increase-slowly/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/']"
+
+
+	# clear old
+	#dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+
+	## File Manager
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/name "'File_Manager-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/command "'io.elementary.files'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/binding "'<Super>F1'"
+
+
+	## Text Editor
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/name "'Text_Editor-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/command "'io.elementary.code'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/binding "'<Super>F2'"
+
+	## Web Browser
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/name "'Web_Browser-0'"
+	#dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "'firefox'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "''"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/binding "'<Super>F3'"
+
+	## Terminal
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/name "'Terminal-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/command "'io.elementary.terminal'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/binding "'<Super>F4'"
 
 
 

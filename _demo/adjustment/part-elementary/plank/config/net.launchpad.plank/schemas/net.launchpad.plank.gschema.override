@@ -2,4 +2,4 @@
 [net.launchpad.plank.dock.settings:Pantheon]
 auto-pinning=false
 hide-mode='none'
-dock-items=['gala-multitaskingview.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.files.dockitem', 'io.elementary.terminal.dockitem', 'io.elementary.code.dockitem', 'firefox.dockitem', 'pcmanfm-qt.dockitem', 'sakura.dockitem', 'io.elementary.appcenter.dockitem']
+dock-items=['gala-multitaskingview.dockitem', 'io.elementary.switchboard.dockitem', 'io.elementary.files.dockitem', 'io.elementary.code.dockitem', 'firefox.dockitem', 'io.elementary.terminal.dockitem', 'pcmanfm-qt.dockitem', 'sakura.dockitem', 'io.elementary.appcenter.dockitem']
