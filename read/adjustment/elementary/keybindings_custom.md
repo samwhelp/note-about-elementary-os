@@ -19,7 +19,7 @@ grand_parent: 微調
 | 按鍵組合   | 功能           | 執行指令                        |
 | ---------- | -------------- | ------------------------------- |
 | `Win + F1` | 開啟檔案管理器 | `io.elementary.files`           |
-| `Win + F2` | 開啟檔文字編輯 | `io.elementary.code`            |
+| `Win + F2` | 開啟文字編輯器 | `io.elementary.code`            |
 | `Win + F3` | 開啟網頁瀏覽器 | `firefox --new-tab about:blank` |
 | `Win + F4` | 開啟終端機     | `io.elementary.terminal`        |
 
