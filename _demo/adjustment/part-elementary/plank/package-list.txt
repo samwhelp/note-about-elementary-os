@@ -1,1 +1,11 @@
 plank
+
+
+io.elementary.terminal
+io.elementary.code
+
+
+sakura
+thunar
+pcmanfm-qt
+firefox

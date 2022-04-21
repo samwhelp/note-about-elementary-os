@@ -17,8 +17,8 @@ io_elementary_terminal_config_install () {
 	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
 
-	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F2']"'"'
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F2']"
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
 
 
 	## gsettings list-recursively | grep io.elementary.terminal.settings

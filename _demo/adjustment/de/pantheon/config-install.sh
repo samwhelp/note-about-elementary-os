@@ -439,8 +439,8 @@ pantheon_set_keybindings_terminal () {
 	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
 
-	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F2']"'"'
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F2']"
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
 
 
 	## gsettings list-recursively | grep io.elementary.terminal.settings
@@ -666,7 +666,7 @@ pantheon_set_keybindings_about_workspace () {
 	# org.gnome.desktop.wm.keybindings switch-to-workspace-up @as []
 	# org.gnome.desktop.wm.keybindings toggle-on-all-workspaces @as []
 	# org.gnome.desktop.wm.preferences num-workspaces 4
-	# org.gnome.desktop.wm.preferences workspace-names ['Term', 'Edit', 'Web', 'File', '']
+	# org.gnome.desktop.wm.preferences workspace-names ['File', 'Edit', 'Web', 'Term', '']
 	# org.gnome.mutter dynamic-workspaces true
 	# org.gnome.mutter workspaces-only-on-primary true
 
@@ -680,7 +680,7 @@ pantheon_set_keybindings_about_workspace () {
 
 	#gsettings set org.gnome.mutter dynamic-workspaces false
 	#gsettings set org.gnome.desktop.wm.preferences num-workspaces 5
-	#gsettings set org.gnome.desktop.wm.preferences workspace-names "['Term', 'Edit', 'Web', 'File', 'Misc']"
+	#gsettings set org.gnome.desktop.wm.preferences workspace-names "['File', 'Edit', 'Web', 'Term', 'Misc']"
 
 
 	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Super>End', '<Alt>z']"
