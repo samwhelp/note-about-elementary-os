@@ -48,6 +48,20 @@ pantheon_set_keybindings_custom () {
 	#dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
 
 
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
+
+	# clear '<Super>t'
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+
+
+
+
 	#gsettings set org.gnome.settings-daemon.plugins.media-keys help "['', '<Super>F1']"
 	##clear '<Super>F1'
 	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys help "'"['']"'"'
