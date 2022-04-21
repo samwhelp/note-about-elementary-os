@@ -8,7 +8,7 @@
 
 * [入門](#入門)
 * [微調](#微調)
-* [Elementary OS 微調](#elementary-OS-微調)
+* [Elementary OS 微調](#elementary-os-微調)
 * [外觀微調](#外觀微調)
 * [相關筆記](#相關筆記)
 
@@ -24,6 +24,9 @@
 ## 微調
 
 ## Elementary OS 微調
+
+
+* [pantheon微調](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html)
 
 
 ### Terminal
