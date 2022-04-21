@@ -1,0 +1,5 @@
+
+pantheon-files
+io.elementary.code
+firefox
+io.elementary.terminal
