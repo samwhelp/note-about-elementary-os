@@ -9,6 +9,11 @@ has_children: true
 
 ## 主題
 
+| 主題 |
+| --- |
+| [佈景主題](https://samwhelp.github.io/note-about-elementary-os/read/theme.html) |
+
+
 | ISO 檔案下載 |
 | --- |
 | [Download ISO](https://samwhelp.github.io/note-about-elementary-os/read/start/download/download_iso.html) |

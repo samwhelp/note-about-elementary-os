@@ -8,6 +8,8 @@
 
 * [入門](#入門)
 * [微調](#微調)
+* [Elementary OS 微調](#elementary-OS-微調)
+* [外觀微調](#外觀微調)
 * [相關筆記](#相關筆記)
 
 
@@ -65,6 +67,27 @@
 | Tweaks | 安裝腳本 |
 | --- | --- |
 | [pantheon-tweaks](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/pantheon-tweaks.html) | [安裝腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/pantheon-tweaks) |
+
+
+
+
+## 外觀微調
+
+
+| 議題 |
+| --- |
+| [theme](https://samwhelp.github.io/note-about-elementary-os/read/theme.html) |
+| [ui-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/theme/ui-theme.html) |
+| [wm-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/theme/wm-theme.html) |
+| [icon-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/icon/icon-theme.html) |
+| [cursor-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/icon/cursor-theme.html) |
+| [grub-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/grub-theme.html) |
+| [lightdm-theme](https://samwhelp.github.io/note-about-elementary-os/read/theme/lightdm-theme.html) |
+
+
+| 議題 | 微調腳本 |
+| --- | --- |
+| [qt5ct 設定](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/env/qt5ct.html) | [設定腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part/qt5ct) |
 
 
 ## 相關筆記
