@@ -749,7 +749,7 @@ pantheon_set_keybindings_about_workspace () {
 }
 
 
-pantheon_set_keybindings_custom_v0 () {
+pantheon_set_keybindings_custom () {
 
 	## Custom Keybindings
 	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/']"
@@ -789,8 +789,7 @@ pantheon_set_keybindings_custom_v0 () {
 
 	## Web Browser
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/name "'Web_Browser-0'"
-	#dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "'firefox'"
-	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "''"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "'firefox --new-tab about:blank'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/binding "'<Super>F3'"
 
 	## Terminal
@@ -802,7 +801,7 @@ pantheon_set_keybindings_custom_v0 () {
 }
 
 
-pantheon_set_keybindings_custom () {
+pantheon_set_keybindings_custom_v1 () {
 
 
 	echo
@@ -853,8 +852,8 @@ pantheon_set_keybindings_custom () {
 
 	## Web Browser
 	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ name "'Web_Browser-0'"
-	#dgsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ command "'firefox'"
-	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ command "''"
+	dgsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ command "'firefox --new-tab about:blank'"
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ command "''"
 	gsettings set org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/ binding "'<Super>F3'"
 
 	## Terminal
