@@ -70,7 +70,7 @@ io.elementary.switchboard settings://desktop/appearance/wallpaper
 
 選擇「Change Wallpaper...」，
 
-接著在「Terminal」執行「ps aux | grep switchboard」，就會找到該指令。
+接著在「Terminal」執行「`ps aux | grep switchboard`」，就會找到該指令。
 
 
 ## Package
