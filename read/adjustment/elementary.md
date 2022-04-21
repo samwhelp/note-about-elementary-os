@@ -38,6 +38,12 @@ parent: 微調
 | [desktop_corner_behavior](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/desktop_corner_behavior.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/desktop_corner_behavior) |
 
 
+## Keybindings
+
+| Keybindings | 微調腳本 |
+| --- | --- |
+| [keybindings_custom](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/elementary/keybindings_custom.html) | [微調腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part-elementary/keybindings_custom) |
+
 
 ## Tweaks
 
