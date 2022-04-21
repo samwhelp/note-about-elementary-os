@@ -8,6 +8,8 @@ parent: 微調
 
 # Elementary OS 微調
 
+* [pantheon微調](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html)
+
 
 ## Terminal
 
