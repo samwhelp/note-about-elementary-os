@@ -65,6 +65,11 @@ pantheon_set_keybindings_adjustment () {
 	gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "['']"
 
 
+	#echo 'gsettings set org.gnome.desktop.wm.keybindings unmaximize "'"['<Alt>F5']"'"'
+	#gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Alt>F5']"
+
+	echo 'gsettings set org.gnome.desktop.wm.keybindings unmaximize "'"['']"'"'
+	gsettings set org.gnome.desktop.wm.keybindings unmaximize "['']"
 
 
 }
