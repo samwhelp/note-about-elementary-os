@@ -791,7 +791,18 @@ pantheon_set_keybindings_adjustment () {
 	gsettings set org.gnome.settings-daemon.plugins.media-keys help "['']"
 
 
+
+	#echo 'gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "'"['<Super>Escape']"'"'
+	#gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "['<Super>Escape']"
+
+	echo 'gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "'"['']"'"'
+	gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "['']"
+
+
+
+
 }
+
 
 pantheon_set_keybindings_custom () {
 
