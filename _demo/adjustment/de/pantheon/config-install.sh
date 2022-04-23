@@ -697,11 +697,11 @@ pantheon_set_keybindings_about_workspace () {
 	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Page_Up', '<Control><Alt>Up', '<Alt>k']"
 	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Page_Down', '<Control><Alt>Down', '<Alt>j']"
 
-	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Alt>h', '<Alt>Left']"
-	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Alt>l', '<Alt>Right']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Alt>h', '<Alt>a', '<Alt>Left']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Alt>l', '<Alt>s', '<Alt>Right']"
 
-	gsettings set org.pantheon.desktop.gala.keybindings cycle-workspaces-previous "['<Alt>a']"
-	gsettings set org.pantheon.desktop.gala.keybindings cycle-workspaces-next "['<Alt>s']"
+	gsettings set org.pantheon.desktop.gala.keybindings cycle-workspaces-previous "['']"
+	gsettings set org.pantheon.desktop.gala.keybindings cycle-workspaces-next "['']"
 
 
 
