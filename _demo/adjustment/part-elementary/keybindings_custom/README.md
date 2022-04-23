@@ -163,3 +163,44 @@ show
 /usr/share/glib-2.0/schemas/org.gnome.settings-daemon.plugins.xsettings.gschema.xml
 ```
 
+
+
+## Notice
+
+run
+
+```
+gsettings list-recursively | grep -i alt | grep -i shift
+```
+
+show
+
+```
+org.gnome.settings-daemon.plugins.media-keys screencast ['<Ctrl><Shift><Alt>R']
+org.gnome.desktop.wm.keybindings move-to-workspace-down ['<Super><Shift>Page_Down', '<Control><Shift><Alt>Down']
+org.gnome.desktop.wm.keybindings cycle-windows-backward ['<Shift><Alt>Escape']
+org.gnome.desktop.wm.keybindings switch-panels-backward ['<Shift><Control><Alt>Tab']
+org.gnome.desktop.wm.keybindings cycle-group-backward ['<Shift><Alt>F6']
+org.gnome.desktop.wm.keybindings cycle-panels-backward ['<Shift><Control><Alt>Escape']
+org.gnome.desktop.wm.keybindings move-to-workspace-up ['<Super><Shift>Page_Up', '<Control><Shift><Alt>Up']
+org.gnome.desktop.wm.keybindings switch-group-backward ['<Shift><Super>Above_Tab', '<Shift><Alt>Above_Tab']
+org.gnome.desktop.input-sources xkb-options ['grp:alt_shift_toggle']
+org.freedesktop.ibus.general.hotkey next-engine ['Alt+Shift_L']
+org.freedesktop.ibus.general.hotkey next-engine-in-menu ['Alt+Shift_L']
+```
+
+> fix: `<Alt><Shift>a` Not Work
+
+run
+
+``` sh
+gsettings set org.gnome.desktop.input-sources xkb-options "['grp:shift_caps_toggle']"
+```
+
+run
+
+``` sh
+gsettings set org.freedesktop.ibus.general.hotkey next-engine "[]"
+gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "[]"
+```
+

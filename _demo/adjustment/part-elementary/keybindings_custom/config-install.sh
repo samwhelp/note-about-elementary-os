@@ -15,14 +15,139 @@ keybindings_custom_config_install () {
 	echo "##"
 	echo
 
-
+	pantheon_set_keybindings_adjustment
 	pantheon_set_keybindings_custom
 
 
 	echo
 }
 
+pantheon_set_keybindings_adjustment () {
+
+	## Fix `<Alt><Shift>a` not work
+
+	echo 'gsettings set org.gnome.desktop.input-sources xkb-options "'"['grp:shift_caps_toggle']"'"'
+	gsettings set org.gnome.desktop.input-sources xkb-options "['grp:shift_caps_toggle']"
+
+
+	echo 'gsettings set org.freedesktop.ibus.general.hotkey next-engine "'"['']"'"'
+	gsettings set org.freedesktop.ibus.general.hotkey next-engine "['']"
+
+	echo 'gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "'"['']"'"'
+	gsettings set org.freedesktop.ibus.general.hotkey next-engine-in-menu "['']"
+
+
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>t']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>t']"
+
+	#echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['<Super>F4']"'"'
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['<Super>F4']"
+
+	# clear '<Super>t'
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "'"['']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+
+
+
+
+	#gsettings set org.gnome.settings-daemon.plugins.media-keys help "['', '<Super>F1']"
+	##clear '<Super>F1'
+	echo 'gsettings set org.gnome.settings-daemon.plugins.media-keys help "'"['']"'"'
+	gsettings set org.gnome.settings-daemon.plugins.media-keys help "['']"
+
+
+}
+
 pantheon_set_keybindings_custom () {
+
+	## Custom Keybindings
+	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/']"
+
+
+	##
+	## $ gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/
+	##
+	## ```
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding command ''
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding name ''
+	## org.gnome.settings-daemon.plugins.media-keys.custom-keybinding binding ''
+	## ```
+	##
+	## $ gsettings list-recursively org.gnome.settings-daemon.plugins.media-keys.custom-keybinding:/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+	##
+	##
+
+
+	## Clear old
+	#dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+	## Dump all
+	#dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+
+
+
+
+
+
+	## File Manager
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/name "'File_Manager-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/command "'io.elementary.files'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/binding "'<Super>F1'"
+
+
+	## Text Editor
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/name "'Text_Editor-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/command "'io.elementary.code'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/binding "'<Super>F2'"
+
+	## Web Browser
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/name "'Web_Browser-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/command "'firefox --new-tab about:blank'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/binding "'<Super>F3'"
+
+	## Terminal
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/name "'Terminal-0'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/command "'io.elementary.terminal'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/binding "'<Super>F4'"
+
+
+
+
+
+	## Wallpaper Shuf
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/name "'Wallpaper-Shuf'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/command "'wallpaper-select-gnome shuf_favorite'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/binding "'<Alt>w'"
+
+	## Wallpaper Default
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/name "'Wallpaper-Default'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/command "'wallpaper-select-gnome default'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/binding "'<Control><Alt>w'"
+
+
+
+	## Toggle Show Desktop
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/name "'Toggle-Show-Desktop'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/command "'toggle-show-desktop.sh'"
+	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/binding "'<Super>d'"
+
+
+
+	echo
+	echo "##"
+	echo "## Dump: keybindings_custom"
+	echo "##"
+	echo
+	echo "dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/"
+	echo
+	dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/
+	echo
+
+}
+
+
+pantheon_set_keybindings_custom_v0 () {
 
 	## Custom Keybindings
 	gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/file-manager-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/text-editor-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal-0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-shuf/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/wallpaper-default/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/toggle-show-desktop/']"
