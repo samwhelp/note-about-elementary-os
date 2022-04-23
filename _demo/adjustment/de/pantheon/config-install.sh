@@ -590,8 +590,8 @@ pantheon_set_keybindings_win_close () {
 	echo "### pantheon_set_keybindings_win_close"
 	echo
 
-	echo 'gsettings set org.gnome.desktop.wm.keybindings close "'"['<Super>q', '<Alt>F4']"'"'
-	gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q', '<Alt>F4']"
+	echo 'gsettings set org.gnome.desktop.wm.keybindings close "'"['<Super>q']"'"'
+	gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
 
 }
 
