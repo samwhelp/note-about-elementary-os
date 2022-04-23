@@ -582,6 +582,22 @@ pantheon_set_keybindings_switch_windows () {
 	gsettings set org.gnome.desktop.wm.keybindings switch-windows "['<Super>s', '<Super>l', '<Super>Right']"
 
 
+
+
+
+	echo 'gsettings set org.gnome.desktop.wm.keybindings cycle-windows "'"['<Alt>Escape']"'"'
+	gsettings set org.gnome.desktop.wm.keybindings cycle-windows "['<Alt>Escape']"
+
+	echo 'gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward "'"['<Super>Escape']"'"'
+	gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward "['<Super>Escape']"
+
+
+	#org.gnome.desktop.wm.keybindings cycle-windows ['<Alt>Escape']
+	#org.gnome.desktop.wm.keybindings cycle-windows-backward ['<Shift><Alt>Escape']
+
+	#org.gnome.desktop.wm.keybindings cycle-panels ['<Control><Alt>Escape']
+	#org.gnome.desktop.wm.keybindings cycle-panels-backward ['<Shift><Control><Alt>Escape']
+
 }
 
 pantheon_set_keybindings_win_close () {
