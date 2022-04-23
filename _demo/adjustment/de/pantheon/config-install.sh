@@ -586,10 +586,10 @@ pantheon_set_keybindings_switch_windows () {
 
 
 	echo 'gsettings set org.gnome.desktop.wm.keybindings cycle-windows "'"['<Alt>Escape']"'"'
-	gsettings set org.gnome.desktop.wm.keybindings cycle-windows "['<Alt>Escape']"
+	gsettings set org.gnome.desktop.wm.keybindings cycle-windows "['<Alt>Escape', '<Super>k', '<Super>Up']"
 
 	echo 'gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward "'"['<Super>Escape']"'"'
-	gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward "['<Super>Escape']"
+	gsettings set org.gnome.desktop.wm.keybindings cycle-windows-backward "['<Super>Escape', '<Super>j', '<Super>Down']"
 
 
 	#org.gnome.desktop.wm.keybindings cycle-windows ['<Alt>Escape']
