@@ -884,6 +884,7 @@ pantheon_set_keybindings_custom () {
 	## Web Browser
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-fn/name "'Web_Browser-Fn'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-fn/command "'firefox --new-tab about:blank'"
+	#dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-fn/command "'wmctrl -x -a firefox'"	
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser-fn/binding "'<Super>F3'"
 
 	## Terminal
