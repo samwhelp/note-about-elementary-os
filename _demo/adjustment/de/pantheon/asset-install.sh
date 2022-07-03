@@ -271,9 +271,9 @@ theme_asset_install_rgaps_xfwm4 () {
 
 	echo
 
-	if [ -a "$HOME/.themes/RGapsBlackNoButtons" ]; then
+	if [ -a "$HOME/.themes/RGapsBlendNoButtons" ]; then
 		echo
-		echo "## Theme Exists:" "$HOME/.themes/RGapsBlackNoButtons"
+		echo "## Theme Exists:" "$HOME/.themes/RGapsBlendNoButtons"
 		echo
 		return 0
 	fi
@@ -308,9 +308,9 @@ theme_asset_install_rgaps_xfwm4_download () {
 
 theme_asset_install_rgaps_xfwm4_install () {
 
-	if ! [ -a "./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons" ]; then
+	if ! [ -a "./tmp/Theme_Rgaps_Source/themes/RGapsBlendNoButtons" ]; then
 		echo
-		echo "## Theme Source / RGapsBlackNoButtons Not Exists:" "./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons"
+		echo "## Theme Source / RGapsBlendNoButtons Not Exists:" "./tmp/Theme_Rgaps_Source/themes/RGapsBlendNoButtons"
 		echo
 		return 0
 	fi
@@ -319,8 +319,8 @@ theme_asset_install_rgaps_xfwm4_install () {
 	echo "mkdir -p $HOME/.themes"
 	mkdir -p "$HOME/.themes"
 
-	echo "cp -a ./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons $HOME/.themes/RGapsBlackNoButtons"
-	cp -a "./tmp/Theme_Rgaps_Source/themes/RGapsBlackNoButtons" "$HOME/.themes/RGapsBlackNoButtons"
+	echo "cp -a ./tmp/Theme_Rgaps_Source/themes/RGapsBlendNoButtons $HOME/.themes/RGapsBlendNoButtons"
+	cp -a "./tmp/Theme_Rgaps_Source/themes/RGapsBlendNoButtons" "$HOME/.themes/RGapsBlendNoButtons"
 
 }
 
