@@ -389,25 +389,32 @@ mod_tool_io_elementary_terminal_config () {
 mod_tool_io_elementary_terminal_config_for_preference () {
 
 
-	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
-
-
+	##
 	## gsettings list-recursively | grep io.elementary.terminal.settings
+	##
 
 
 	gsettings set io.elementary.terminal.settings follow-last-tab true
 
-
 	gsettings set io.elementary.terminal.settings background 'rgba(0, 0, 0, 0.85)'
 
+	gsettings set io.elementary.terminal.settings font 'Monospace 12'
 
-	gsettings set io.elementary.terminal.settings font 'Monospace 16'
+	gsettings set io.elementary.terminal.settings remember-tabs false
+
+	gsettings set io.elementary.terminal.settings save-exited-tabs false
+
 
 
 	return 0
 }
 
 mod_tool_io_elementary_terminal_config_for_keybind () {
+
+
+	gsettings set org.gnome.settings-daemon.plugins.media-keys terminal "['']"
+
+
 
 
 	return 0
@@ -500,7 +507,7 @@ mod_pantheon_config () {
 
 mod_tool_config () {
 
-	#mod_tool_io_elementary_terminal_config
+	mod_tool_io_elementary_terminal_config
 
 	mod_tool_io_elementary_files_config
 
