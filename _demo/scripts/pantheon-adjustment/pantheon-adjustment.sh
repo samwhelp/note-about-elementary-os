@@ -356,22 +356,13 @@ mod_pantheon_config_for_system_config_quick () {
 
 
 	return 0
-
-	gsettings set org.gnome.shell.keybindings focus-active-notification "['<Super>b']"
-
-	gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
-
-	gsettings set org.gnome.shell.keybindings toggle-quick-settings "['<Super>m']"
-
-
-	return 0
 }
 
 
 
 
 ##
-## ## Tool / Gnome Terminal / Config
+## ## Tool / io.elementary.terminal / Config
 ##
 
 mod_tool_io_elementary_terminal_config () {
@@ -451,7 +442,7 @@ mod_tool_io_elementary_terminal_config_for_profile () {
 
 
 ##
-## ## Tool / Nautilus / Config
+## ## Tool / io.elementary.files / Config
 ##
 
 mod_tool_io_elementary_files_config () {
@@ -478,7 +469,7 @@ mod_tool_io_elementary_files_config () {
 
 
 ##
-## ## Tool / Gnome Text Editor / Config
+## ## Tool / io.elementary.code / Config
 ##
 
 mod_tool_io_elementary_code_config () {
