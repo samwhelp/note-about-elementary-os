@@ -87,6 +87,10 @@ mod_pantheon_config_for_keybind_main () {
 
 	gsettings set org.gnome.desktop.wm.keybindings begin-resize "['<Super>r']"
 
+	gsettings set org.gnome.desktop.wm.keybindings minimize "['<Super>x']"
+
+	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
+
 
 	##
 	## ## Window / Switch
