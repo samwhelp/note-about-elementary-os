@@ -429,10 +429,18 @@ mod_tool_io_elementary_files_config () {
 
 	gsettings set io.elementary.files.preferences default-viewmode 'list'
 
+	gsettings set io.elementary.files.preferences show-hiddenfiles true
+
+	gsettings set io.elementary.files.preferences restore-tabs false
+
+	gsettings set io.elementary.files.preferences singleclick-select true
+
 
 
 
 	gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true
+
+
 
 
 	return 0
@@ -492,11 +500,11 @@ mod_pantheon_config () {
 
 mod_tool_config () {
 
-	mod_tool_io_elementary_terminal_config
+	#mod_tool_io_elementary_terminal_config
 
 	mod_tool_io_elementary_files_config
 
-	mod_tool_io_elementary_code_config
+	#mod_tool_io_elementary_code_config
 
 
 	return 0
@@ -516,7 +524,7 @@ mod_config_portal () {
 
 	mod_pantheon_config
 
-	#mod_tool_config
+	mod_tool_config
 
 
 
