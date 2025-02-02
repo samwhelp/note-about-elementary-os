@@ -493,6 +493,8 @@ mod_tool_io_elementary_code_config () {
 
 	gsettings set io.elementary.code.settings strip-trailing-on-save true
 
+	gsettings set io.elementary.code.settings autosave false
+
 	gsettings set io.elementary.code.settings indent-width 4
 
 	gsettings set io.elementary.code.settings line-wrap true
