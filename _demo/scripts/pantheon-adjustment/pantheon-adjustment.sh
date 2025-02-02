@@ -362,6 +362,19 @@ mod_pantheon_config_for_system_config_quick () {
 	return 0
 }
 
+mod_pantheon_config_for_system_config_dock () {
+
+
+	#gsettings set io.elementary.dock autohide-mode 'overlapping-focus-window'
+
+	gsettings set io.elementary.dock autohide-mode 'never'
+
+
+
+
+	return 0
+}
+
 mod_pantheon_config_for_system_config_hot_corner () {
 
 
@@ -581,6 +594,8 @@ mod_pantheon_config () {
 
 
 	mod_pantheon_config_for_system_config_quick
+
+	mod_pantheon_config_for_system_config_dock
 
 	mod_pantheon_config_for_system_config_hot_corner
 

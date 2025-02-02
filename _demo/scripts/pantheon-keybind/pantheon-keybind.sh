@@ -356,44 +356,6 @@ mod_pantheon_config_for_empty_switch_windows () {
 	return 0
 }
 
-mod_pantheon_config_for_system_config_quick () {
-
-
-	return 0
-}
-
-mod_pantheon_config_for_system_config_hot_corner () {
-
-
-	#gsettings set io.elementary.desktop.wm.behavior hotcorner-topleft 'none'
-
-	#gsettings set io.elementary.desktop.wm.behavior hotcorner-topright 'none'
-
-	#gsettings set io.elementary.desktop.wm.behavior hotcorner-bottomleft 'none'
-
-	#gsettings set io.elementary.desktop.wm.behavior hotcorner-bottomright 'none'
-
-	#gsettings set io.elementary.desktop.wm.behavior hotcorner-custom-command 'none'
-
-
-
-
-	gsettings set io.elementary.desktop.wm.behavior hotcorner-topleft 'show-workspace-view'
-
-	gsettings set io.elementary.desktop.wm.behavior hotcorner-topright 'open-launcher'
-
-	gsettings set io.elementary.desktop.wm.behavior hotcorner-bottomleft 'window-overview-all'
-
-	gsettings set io.elementary.desktop.wm.behavior hotcorner-bottomright 'custom-command'
-
-	gsettings set io.elementary.desktop.wm.behavior hotcorner-custom-command 'hotcorner-topright:io.elementary.terminal'
-
-
-
-
-	return 0
-}
-
 
 
 
@@ -416,13 +378,6 @@ mod_pantheon_config () {
 	mod_pantheon_config_for_keybind_custom
 
 	mod_pantheon_config_for_workspace
-
-
-
-
-	mod_pantheon_config_for_system_config_quick
-
-	mod_pantheon_config_for_system_config_hot_corner
 
 
 
