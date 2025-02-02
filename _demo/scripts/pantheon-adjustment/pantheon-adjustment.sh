@@ -426,7 +426,7 @@ mod_tool_io_elementary_terminal_config_for_preference () {
 
 
 
-	gsettings io.elementary.terminal.settings prefer-dark-style true
+	gsettings set io.elementary.terminal.settings prefer-dark-style true
 
 
 	return 0
@@ -535,7 +535,7 @@ mod_tool_config () {
 
 	#mod_tool_io_elementary_code_config
 
-	#mod_tool_io_elementary_terminal_config
+	mod_tool_io_elementary_terminal_config
 
 
 	return 0
