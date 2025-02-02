@@ -484,9 +484,40 @@ mod_tool_io_elementary_files_config () {
 mod_tool_io_elementary_code_config () {
 
 
+	##
+	## gsettings list-recursively | grep io.elementary.code.settings
+	##
+
+
 	gsettings set io.elementary.code.settings spaces-instead-of-tabs false
 
+	gsettings set io.elementary.code.settings strip-trailing-on-save true
+
+	gsettings set io.elementary.code.settings indent-width 4
+
+	gsettings set io.elementary.code.settings line-wrap true
+
+	gsettings set io.elementary.code.settings show-mini-map true
+
+	gsettings set io.elementary.code.settings show-right-margin true
+
+	gsettings set io.elementary.code.settings right-margin-position 80
+
+
+
+
+	gsettings set io.elementary.code.settings use-system-font false
+
+	#gsettings set io.elementary.code.settings font 'Droid Sans Mono 12'
+
+	gsettings set io.elementary.code.settings font 'Monospace 12'
+
+
+
+
 	gsettings set io.elementary.code.settings prefer-dark-style true
+
+	gsettings set io.elementary.code.settings follow-system-style false
 
 	gsettings set io.elementary.code.settings style-scheme 'oblivion'
 
@@ -533,7 +564,7 @@ mod_tool_config () {
 
 	mod_tool_io_elementary_files_config
 
-	#mod_tool_io_elementary_code_config
+	mod_tool_io_elementary_code_config
 
 	mod_tool_io_elementary_terminal_config
 
