@@ -105,7 +105,7 @@ mod_pantheon_config_for_keybind_main () {
 	## ## Workspace / Switch
 	##
 
-	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "[]"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "[]"
 
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "[]"
 
