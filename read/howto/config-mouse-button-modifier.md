@@ -9,6 +9,27 @@ parent: 如何
 # 設定「Mouse Button Modifier」
 
 
+
+
+## 主題
+
+* [前提](#前提)
+* [相關設定指令](#相關設定指令)
+* [相關議題](#相關議題)
+* [相關應用](#相關應用)
+* [相關連結](#相關連結)
+
+
+
+
+## 前提
+
+> 關於「Mouse Button Modifier」的設定，目前「Elementary OS」是按照我慣用的方式設定，所以以下只是紀錄設定步驟。
+
+
+
+
+
 ## 相關設定指令
 
 執行下面指令，將「Mouse Button Modifier」設定「Super鍵」，也就是「Win鍵」。
@@ -37,14 +58,22 @@ gsettings set org.gnome.desktop.wm.preferences resize-with-right-button true
 
 例如「`Win + q` => 視窗關閉」，「`Win + m` => 視窗最大化」。
 
-預設按下「Win鍵」會觸發「顯示Overlay」，
+預設按下「Win鍵」會觸發「顯示主要功能選單」，
 
-為了避免無謂的干擾，我會執行下面指令來[停用這個功能](https://samwhelp.github.io/note-about-elementary-os/read/howto/disable-keybind-open-overlay.html)。
+為了避免無謂的干擾，我會執行下面指令來[停用這個功能](https://samwhelp.github.io/note-about-elementary-os/read/howto/disable-keybind-open-main-menu.html)。
 
 
 ``` sh
 gsettings set org.gnome.mutter overlay-key ''
 ```
+
+並且設定「'Alt + F1'」來觸發「顯示主要功能選單」。
+
+``` sh
+gsettings set io.elementary.desktop.wm.keybindings panel-main-menu "['<Alt>F1']"
+```
+
+
 
 
 ## 相關議題
@@ -52,12 +81,16 @@ gsettings set org.gnome.mutter overlay-key ''
 | 相關議題 |
 | ------- |
 | [滑鼠按鍵綁定](https://samwhelp.github.io/note-about-elementary-os/read/config/mousebind.html#視窗內容區塊) |
-| [停用按鍵綁定「Super_L」開啟「Overlay」](https://samwhelp.github.io/note-about-elementary-os/read/howto/disable-keybind-open-overlay.html) |
+| [停用按鍵綁定「Super_L」開啟「Main Menu」](https://samwhelp.github.io/note-about-elementary-os/read/howto/disable-keybind-open-main-menu.html) |
+
+
 
 
 ## 相關應用
 
 * Menu Applet 開發筆記 / [demo-mouse-button-modifier](https://samwhelp.github.io/note-about-menu-applet/read/demo/demo-mouse-button-modifier.html#gnome-shell)
+
+
 
 
 ## 相關連結
