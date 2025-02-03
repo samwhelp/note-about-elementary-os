@@ -91,6 +91,8 @@ mod_pantheon_config_for_keybind_main () {
 
 	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
 
+	gsettings set org.gnome.desktop.wm.keybindings toggle-above "['<Super>t']"
+
 
 	##
 	## ## Window / Switch
