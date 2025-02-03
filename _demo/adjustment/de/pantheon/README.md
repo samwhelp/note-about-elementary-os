@@ -10,7 +10,7 @@
 
 ## Note
 
-* note-about-manjaro / [pantheon](https://samwhelp.github.io/note-about-manjaro/read/adjustment/de/pantheon.html) / [adjustment](https://github.com/samwhelp/note-about-manjaro/tree/gh-pages/_demo/adjustment/de/pantheon)
+* note-about-elementary-os / [pantheon](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/de/pantheon.html) / [adjustment](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/de/pantheon)
 
 
 ## Arch Wiki
