@@ -371,6 +371,10 @@ mod_pantheon_config_for_system_config_dock () {
 
 
 
+	gsettings set io.elementary.dock launchers "['io.elementary.files.desktop', 'io.elementary.code.desktop', 'org.gnome.Epiphany.desktop', 'io.elementary.terminal.desktop', 'io.elementary.settings.desktop', 'io.elementary.appcenter.desktop', 'gala-multitaskingview.desktop']"
+
+
+
 
 	return 0
 }
