@@ -6,20 +6,14 @@
 
 ## 主題
 
-* [入門](#入門)
+* [入門](https://samwhelp.github.io/note-about-elementary-os/read/start.html)
 * [微調](#微調)
 * [Elementary OS 微調](#elementary-os-微調)
 * [外觀微調](#外觀微調)
 * [相關筆記](#相關筆記)
 
 
-## 入門
 
-| ISO 檔案下載 |
-| --- |
-| [Download ISO](https://samwhelp.github.io/note-about-elementary-os/read/start/download/download_iso.html) |
-| [Boot ISO By USB](https://samwhelp.github.io/note-about-elementary-os/read/start/download/boot_iso_by_usb.html) |
-| [Boot ISO By Ventoy](https://samwhelp.github.io/note-about-elementary-os/read/start/download/boot_iso_by_ventoy.html) |
 
 ## 微調
 
@@ -99,9 +93,11 @@
 | [qt5ct 設定](https://samwhelp.github.io/note-about-elementary-os/read/adjustment/env/qt5ct.html) | [設定腳本](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/adjustment/part/qt5ct) |
 
 
+
+
 ## 相關筆記
 
-## samwhelp
+## Samwhelp
 
 * [個人筆記](https://samwhelp.github.io/book/)
 * [system-modeling](https://samwhelp.github.io/system-modeling/) / ([GitHub](https://github.com/samwhelp/system-modeling))
