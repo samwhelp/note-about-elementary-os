@@ -155,6 +155,8 @@ mod_pantheon_config_for_keybind_main () {
 	## ## Window / Tiling Move
 	##
 
+	gsettings set org.gnome.desktop.wm.keybindings move-to-center "['<Super>m']"
+
 	#gsettings set org.gnome.desktop.wm.keybindings maximize "['<Control><Super>Up']"
 
 	#gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Control><Super>Down']"
