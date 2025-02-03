@@ -30,6 +30,19 @@ grand_parent: 如何
 
 ``` sh
 
+gsettings set io.elementary.files.preferences default-viewmode 'list'
+
+gsettings set io.elementary.files.preferences show-hiddenfiles true
+
+gsettings set io.elementary.files.preferences restore-tabs false
+
+gsettings set io.elementary.files.preferences singleclick-select true
+
+
+
+
+gsettings set org.gtk.gtk4.Settings.FileChooser show-hidden true
+
 ```
 
 

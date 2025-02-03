@@ -490,6 +490,7 @@ mod_tool_io_elementary_terminal_config_for_preference () {
 	##
 
 
+
 	gsettings set io.elementary.terminal.settings follow-last-tab true
 
 	gsettings set io.elementary.terminal.settings remember-tabs false
