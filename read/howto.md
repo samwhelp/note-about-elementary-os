@@ -45,9 +45,8 @@ has_children: true
 
 | 桌面 |
 | --- |
-| [設定「io.elementary.terminal (終端機)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.terminal.html) |
-| [設定「io.elementary.files (檔案管理器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.files.html) |
-| [設定「io.elementary.code (文字編輯器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.code.html) |
+| [設定「Dock」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-dock.html) |
+| [設定「Hot Corner」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-hot-corner.html) |
 
 
 
@@ -56,7 +55,9 @@ has_children: true
 
 | 常用工具 |
 | ------- |
-| [設定「Dock」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.code.html) |
+| [設定「io.elementary.terminal (終端機)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.terminal.html) |
+| [設定「io.elementary.files (檔案管理器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.files.html) |
+| [設定「io.elementary.code (文字編輯器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.code.html) |
 
 
 
