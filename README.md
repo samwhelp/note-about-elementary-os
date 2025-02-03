@@ -10,10 +10,20 @@
 ## 主題
 
 * [入門](https://samwhelp.github.io/note-about-elementary-os/read/start.html)
+* [微調腳本](#微調腳本)
 * [微調](#微調)
 * [Elementary OS 微調](#elementary-os-微調)
 * [外觀微調](#外觀微調)
 * [相關筆記](#相關筆記)
+
+
+
+
+## 微調腳本
+
+| 微調腳本 |
+| -------- |
+| [簡易微調](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/scripts/pantheon-adjustment) |
 
 
 
