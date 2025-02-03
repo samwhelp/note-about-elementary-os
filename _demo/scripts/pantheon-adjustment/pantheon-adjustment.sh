@@ -443,7 +443,7 @@ mod_pantheon_config_for_system_config_hot_corner () {
 
 	#gsettings set io.elementary.desktop.wm.behavior hotcorner-bottomright 'none'
 
-	#gsettings set io.elementary.desktop.wm.behavior hotcorner-custom-command 'none'
+	#gsettings set io.elementary.desktop.wm.behavior hotcorner-custom-command ''
 
 
 
