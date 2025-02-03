@@ -32,9 +32,13 @@ has_children: true
 * switchboard
 * switchboard-plug-pantheon-shell
 
-```
+執行
+
+``` sh
 apt-cache search switchboard
 ```
+
+顯示
 
 ```
 io.elementary.switchboard.wacom - Wacom plug for Switchboard
