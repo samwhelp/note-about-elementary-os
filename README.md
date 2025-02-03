@@ -20,6 +20,7 @@
 * [概覽](#概覽)
 * [如何](#如何)
 * [按鍵綁定](#按鍵綁定)
+* [字型](#字型)
 * [輸入法](#輸入法)
 * [相關筆記](#相關筆記)
 
@@ -63,6 +64,15 @@
 | --- |
 | [鍵盤按鍵綁定](https://samwhelp.github.io/note-about-elementary-os/read/config/keybind.html) |
 | [滑鼠按鍵綁定](https://samwhelp.github.io/note-about-elementary-os/read/config/mousebind.html) |
+
+
+
+
+## 字型
+
+| 字型設定 | 微調腳本 |
+| -------- | -------- |
+| [設定字型查找順序](https://samwhelp.github.io/note-about-elementary-os/read/subject/font/config/font-match-order.html) | [微調腳本](https://github.com/samwhelp/elementary-os-adjustment/tree/main/prototype/main/font-config/font-match-order) |
 
 
 
