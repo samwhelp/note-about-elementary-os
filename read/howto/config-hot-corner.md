@@ -43,7 +43,7 @@ io.elementary.desktop.wm.behavior hotcorner-topright 'none'
 
 ## 如何設定
 
-> 執行下面指令，設定「永遠顯示」
+> 執行下面指令，設定「滑鼠游標」移動到「桌面四方角落」所觸發的「功能」。
 
 ``` sh
 
