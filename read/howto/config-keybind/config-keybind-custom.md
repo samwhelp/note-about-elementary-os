@@ -59,7 +59,7 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/sys
 
 ## ### System Settings
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/control-center/name "'Control_Center'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/control-center/command "'io.elementary.switchboard settings://input/keyboard/shortcuts'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/control-center/command "'io.elementary.settings'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/control-center/binding "'<Shift><Alt>s'"
 
 
@@ -129,7 +129,7 @@ gsettings get org.gnome.settings-daemon.plugins.media-keys custom-keybindings
 
 [control-center]
 binding='<Shift><Alt>s'
-command='io.elementary.switchboard settings://input/keyboard/shortcuts'
+command='io.elementary.settings'
 name='Control_Center'
 
 [file-manager-1]
