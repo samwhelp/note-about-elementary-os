@@ -71,3 +71,11 @@ gsettings set io.elementary.dock autohide-mode 'never'
 ``` sh
 gsettings set io.elementary.dock launchers "['io.elementary.files.desktop', 'io.elementary.code.desktop', 'org.gnome.Epiphany.desktop', 'io.elementary.terminal.desktop', 'io.elementary.settings.desktop', 'io.elementary.appcenter.desktop', 'gala-multitaskingview.desktop']"
 ```
+
+接著執行下面指令，關閉「Dock」，
+
+``` sh
+killall io.elementary.dock
+```
+
+接著會自動重啟「Dock」，剛剛的設定就會生效。

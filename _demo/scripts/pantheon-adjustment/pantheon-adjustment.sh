@@ -362,7 +362,26 @@ mod_pantheon_config_for_system_config_quick () {
 	return 0
 }
 
+
+
+
+
+##
+## ## Pantheon / Config / Dock
+##
+
 mod_pantheon_config_for_system_config_dock () {
+
+
+	mod_pantheon_config_for_system_config_dock_for_preference
+
+	mod_pantheon_config_for_system_config_dock_for_launcher
+
+
+	return 0
+}
+
+mod_pantheon_config_for_system_config_dock_for_preference () {
 
 
 	#gsettings set io.elementary.dock autohide-mode 'overlapping-focus-window'
@@ -370,14 +389,33 @@ mod_pantheon_config_for_system_config_dock () {
 	gsettings set io.elementary.dock autohide-mode 'never'
 
 
+	return 0
+}
+
+mod_pantheon_config_for_system_config_dock_for_launcher () {
+
 
 	gsettings set io.elementary.dock launchers "['io.elementary.files.desktop', 'io.elementary.code.desktop', 'org.gnome.Epiphany.desktop', 'io.elementary.terminal.desktop', 'io.elementary.settings.desktop', 'io.elementary.appcenter.desktop', 'gala-multitaskingview.desktop']"
 
 
+	mod_pantheon_config_for_system_config_dock_to_restart
 
 
 	return 0
 }
+
+mod_pantheon_config_for_system_config_dock_to_restart () {
+
+	if killall io.elementary.dock; then
+		return 0
+	fi
+
+	return 0
+}
+
+##
+## ## Pantheon / Config / Hot Corner
+##
 
 mod_pantheon_config_for_system_config_hot_corner () {
 
