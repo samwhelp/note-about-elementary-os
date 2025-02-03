@@ -103,7 +103,7 @@ parent: 一覽表
 | `Win + f`  | 視窗全螢幕                         | `org.gnome.desktop.wm.keybindings toggle-fullscreen`           |
 | `Win + w`  | 視窗最大化                         | `org.gnome.desktop.wm.keybindings toggle-maximized`             |
 | `Win + x`  | 視窗最小化                         | `org.gnome.desktop.wm.keybindings minimize`             |
-| `Win + d`  | [概覽](#概覽) / 所有工作空間概覽                          | `org.gnome.desktop.wm.keybindings show-desktop`             |
+| `Win + d`  | [概覽](#切換--概覽) / 所有工作空間概覽                          | `org.gnome.desktop.wm.keybindings show-desktop`             |
 | `Win + e`  | 開始「視窗移動」                   | `org.gnome.desktop.wm.keybindings begin-move`                 |
 | `Win + r`  | 開始「視窗更改大小」               | `org.gnome.desktop.wm.keybindings begin-resize`               |
 | `Win + t`  | 視窗保持永遠在最上方               | `org.gnome.desktop.wm.keybindings toggle-above`  |
