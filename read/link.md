@@ -4,20 +4,27 @@ nav_order: 9000
 has_children: true
 ---
 
+
 # 連結
+
+
 
 
 ## Elementary OS
 
 * [Elementary OS](https://elementary.io/)
 * GitHub / [elementary](https://github.com/elementary)
-* [releases.elementary.io](releases.elementary.io) ([GitHub](https://github.com/elementary/releases))
+* [releases.elementary.io](https://releases.elementary.io) ([GitHub](https://github.com/elementary/releases))
+
+
 
 
 ## Article
 
 * [https://blogs.gnome.org/alexm/2021/10/04/dark-style-preference/](https://blogs.gnome.org/alexm/2021/10/04/dark-style-preference/)
 * [https://gitlab.gnome.org/GNOME/Initiatives/-/wikis/Dark-Style-Preference](https://gitlab.gnome.org/GNOME/Initiatives/-/wikis/Dark-Style-Preference)
+
+
 
 
 ## Keyword
@@ -60,9 +67,13 @@ pantheon-tweaks-dbg - Change hidden desktop settings (debugging symbols)
 ```
 
 
+
+
 ## pantheon-tweaks
 
 * [pantheon-tweaks](https://github.com/pantheon-tweaks/pantheon-tweaks)
+
+
 
 
 ## Just the Docs
