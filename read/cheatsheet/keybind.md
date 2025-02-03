@@ -8,6 +8,8 @@ parent: 一覽表
 
 # 鍵盤按鍵綁定一覽表
 
+> [簡易微調](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/scripts/pantheon-adjustment)
+
 > 概覽 / [工作流程](https://samwhelp.github.io/note-about-elementary-os/read/guide/workflow)
 
 > [鍵盤按鍵綁定說明](https://samwhelp.github.io/note-about-elementary-os/read/config/keybind.html)

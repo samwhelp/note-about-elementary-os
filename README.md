@@ -8,6 +8,9 @@
 | [Elementary OS 探索筆記](https://samwhelp.github.io/note-about-elementary-os/) | [GitHub](https://github.com/samwhelp/note-about-elementary-os) |
 
 
+> [鍵盤按鍵綁定一覽表](https://samwhelp.github.io/note-about-elementary-os/read/cheatsheet/keybind.html)
+
+
 
 
 ## 主題
