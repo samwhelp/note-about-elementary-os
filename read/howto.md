@@ -53,7 +53,7 @@ has_children: true
 
 ## 常用工具
 
-| 常用工具 |
+| [常用工具](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool.html) |
 | ------- |
 | [設定「io.elementary.terminal (終端機)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.terminal.html) |
 | [設定「io.elementary.files (檔案管理器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.files.html) |
