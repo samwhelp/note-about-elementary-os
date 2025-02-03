@@ -148,7 +148,7 @@ parent: 一覽表
 | 按鍵組合   | 功能                  | 設定項目                            |
 | ---------- | --------------------- | ----------------------------------- |
 | `Win + grave`  | 切換到「所有工作空間概覽」  | `org.gnome.desktop.wm.keybindings show-desktop`   |
-| `Win + Tab`  | 切換到「目前工作空間的所有視窗概覽」  | `io.elementary.desktop.wm.keybindings expose-all-windows`  |
+| `Win + Tab`  | 切換到「所有視窗概覽」  | `io.elementary.desktop.wm.keybindings expose-all-windows`  |
 
 > 關於「grave」指是「`」，在「Tab鍵」上方的那個「鍵盤按鍵」。
 

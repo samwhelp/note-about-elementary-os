@@ -49,7 +49,6 @@ grand_parent: 如何
 * [Workspace / Next](#workspace--next)
 * [Overview / Workspace](#overview--workspace)
 * [Overview / Window](#overview--window)
-* [Window / Tiling Move](#window--tiling-move)
 * [Screenshot](#screenshot)
 * [統整](#統整)
 
@@ -209,7 +208,7 @@ gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>grave', '<
 
 ## Overview / Window
 
-> 執行下面指令，綁定「`Win + Tab`」來切換到「目前工作空間的所有視窗概覽」。
+> 執行下面指令，綁定「`Win + Tab`」來切換到「所有視窗概覽」。
 
 ``` sh
 gsettings set io.elementary.desktop.wm.keybindings expose-all-windows "['<Super>Tab', '<Super>Down']"
@@ -232,27 +231,6 @@ gsettings set io.elementary.desktop.wm.keybindings expose-all-windows "['<Super>
 > `Alt` for `Workspace`
 
 
-
-
-## Window / Tiling Move
-
-> 設定參考指令如下
-
-``` sh
-
-##
-## ## Window / Tiling Move
-##
-
-gsettings set org.gnome.desktop.wm.keybindings maximize "['<Control><Super>Up']"
-
-gsettings set org.gnome.desktop.wm.keybindings unmaximize "['<Control><Super>Down']"
-
-gsettings set org.gnome.mutter.keybindings toggle-tiled-left "['<Control><Super>Left']"
-
-gsettings set org.gnome.mutter.keybindings toggle-tiled-right "['<Control><Super>Right']"
-
-```
 
 
 ## Screenshot
