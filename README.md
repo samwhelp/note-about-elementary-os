@@ -1,7 +1,10 @@
 
+
 # 首頁
 
 * [Elementary OS 探索筆記](https://samwhelp.github.io/note-about-elementary-os/) ([GitHub](https://github.com/samwhelp/note-about-elementary-os))
+
+
 
 
 ## 主題
