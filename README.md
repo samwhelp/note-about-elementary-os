@@ -11,7 +11,6 @@
 
 * [入門](https://samwhelp.github.io/note-about-elementary-os/read/start.html)
 * [微調腳本](#微調腳本)
-* [微調](#微調)
 * [Elementary OS 微調](#elementary-os-微調)
 * [外觀微調](#外觀微調)
 * [相關筆記](#相關筆記)
@@ -27,8 +26,6 @@
 
 
 
-
-## 微調
 
 ## Elementary OS 微調
 
@@ -110,10 +107,15 @@
 
 ## 相關筆記
 
+| Link | GitHub |
+| ---- | ------ |
+| [Linux Mint 探索筆記](https://samwhelp.github.io/note-about-linuxmint/) | [GitHub](https://github.com/samwhelp/note-about-linuxmint) |
+| [Ubuntu 探索筆記](https://samwhelp.github.io/note-about-ubuntu/) | [GitHub](https://github.com/samwhelp/note-about-ubuntu) |
+| [Debian 探索筆記](https://samwhelp.github.io/note-about-debian/) | [GitHub](https://github.com/samwhelp/note-about-debian) |
+
+
+
+
 ## Samwhelp
 
 * [個人筆記](https://samwhelp.github.io/book/)
-* [system-modeling](https://samwhelp.github.io/system-modeling/) / ([GitHub](https://github.com/samwhelp/system-modeling))
-* [ubuntu 探索筆記](https://samwhelp.github.io/note-about-ubuntu/)
-* [manjaro 探索筆記](https://samwhelp.github.io/note-about-manjaro/)
-* [archcraft 探索筆記](https://samwhelp.github.io/note-about-archcraft/) / [archcraft-adjustment-package](https://github.com/samwhelp/archcraft-adjustment-package)
