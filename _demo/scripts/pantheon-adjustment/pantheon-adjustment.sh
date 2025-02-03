@@ -271,6 +271,7 @@ mod_pantheon_config_for_keybind_custom () {
 	## ### Web Browser
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/name "'Web_Browser'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/command "'firefox --new-tab about:blank'"
+	#dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/command "'falkon --new-tab about:blank'"
 	dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/web-browser/binding "'<Shift><Alt>b'"
 
 
