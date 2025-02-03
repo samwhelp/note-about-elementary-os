@@ -32,6 +32,8 @@ has_children: true
 
 
 
+> 以下連結是在舊版所寫的資料，目前先留存當參考，尚在整理中，未來會移除或改寫。
+
 
 ## Elementary OS 微調
 
