@@ -4,7 +4,13 @@ nav_order: 1
 has_children: true
 ---
 
+
 # 入門
+
+
+> [鍵盤按鍵綁定一覽表](https://samwhelp.github.io/note-about-elementary-os/read/cheatsheet/keybind.html)
+
+
 
 
 ## 主題
