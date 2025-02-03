@@ -65,6 +65,10 @@ mod_pantheon_config_for_keybind_main () {
 	gsettings set io.elementary.desktop.wm.keybindings switch-input-source-backward "[]"
 
 
+	##gsettings set org.gnome.mutter.keybindings cancel-input-capture "['<Super><Shift>Escape']"
+	gsettings set org.gnome.mutter.keybindings cancel-input-capture "['<Control><Shift>Escape']"
+
+
 	##
 	## ## Application / Launcher
 	##
