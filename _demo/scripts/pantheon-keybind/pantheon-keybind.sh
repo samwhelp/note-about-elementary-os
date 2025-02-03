@@ -59,6 +59,14 @@ mod_pantheon_config_for_keybind_main () {
 	gsettings set io.elementary.desktop.wm.keybindings pip "['<Super>v']"
 
 
+	##gsettings set io.elementary.desktop.wm.keybindings switch-input-source ['<Super>Space']
+	##gsettings set io.elementary.desktop.wm.keybindings switch-input-source-backward ['<Super><Shift>Space']
+
+	gsettings set io.elementary.desktop.wm.keybindings switch-input-source "[]"
+
+	gsettings set io.elementary.desktop.wm.keybindings switch-input-source-backward "[]"
+
+
 	##
 	## ## Application / Launcher
 	##
@@ -92,6 +100,7 @@ mod_pantheon_config_for_keybind_main () {
 	gsettings set org.gnome.desktop.wm.keybindings raise-or-lower "['<Super>z']"
 
 	gsettings set org.gnome.desktop.wm.keybindings toggle-above "['<Super>t']"
+
 
 
 	##
