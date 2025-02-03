@@ -14,6 +14,8 @@ has_children: true
 
 * [滑鼠按鍵綁定](#滑鼠按鍵綁定)
 * [鍵盤按鍵綁定](#鍵盤按鍵綁定)
+* [桌面](#桌面)
+* [常用工具](#常用工具)
 * [相關連結](#相關連結)
 
 
@@ -35,6 +37,26 @@ has_children: true
 | ----------- |
 | [設定「主要」的「按鍵綁定」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-keybind/config-keybind-main.html) |
 | [設定「自訂」的「按鍵綁定」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-keybind/config-keybind-custom.html) |
+
+
+
+
+## 桌面
+
+| 桌面 |
+| --- |
+| [設定「io.elementary.terminal (終端機)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.terminal.html) |
+| [設定「io.elementary.files (檔案管理器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.files.html) |
+| [設定「io.elementary.code (文字編輯器)」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.code.html) |
+
+
+
+
+## 常用工具
+
+| 常用工具 |
+| ------- |
+| [設定「Dock」](https://samwhelp.github.io/note-about-elementary-os/read/howto/config-tool/config-tool-io.elementary.code.html) |
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: 設定「io.elementary.terminal (終端機)」
-nav_order: 7020
+nav_order: 7010
 has_children: false
 parent: 設定「工具 (Tool)」
 grand_parent: 如何
