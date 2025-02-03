@@ -12,7 +12,7 @@ has_children: true
 
 | 主題 |
 | --- |
-| [Download ISO](https://samwhelp.github.io/note-about-elementary-os/read/core/iso/download-iso.html)
+| [Download ISO](https://samwhelp.github.io/note-about-elementary-os/read/core/iso/download-iso.html) |
 | [Boot ISO](https://samwhelp.github.io/note-about-elementary-os/read/core/iso/boot-iso.html) |
 
 
