@@ -2,7 +2,10 @@
 
 # 首頁
 
-* [Elementary OS 探索筆記](https://samwhelp.github.io/note-about-elementary-os/) ([GitHub](https://github.com/samwhelp/note-about-elementary-os))
+| Link | GitHub |
+| ---- | ------ |
+| [Elementary OS Adjustment](https://samwhelp.github.io/elementary-os-adjustment/) | [GitHub](https://github.com/samwhelp/elementary-os-adjustment) |
+| [Elementary OS 探索筆記](https://samwhelp.github.io/note-about-elementary-os/) | [GitHub](https://github.com/samwhelp/note-about-elementary-os) |
 
 
 
