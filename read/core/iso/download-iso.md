@@ -21,7 +21,7 @@ parent: ISO
 
 ## 下載腳本
 
-* [下載腳本](https://github.com/samwhelp/elementary-os-adjustment/blob/main/core/iso/boot-iso/boot-iso-by-grub/demo-boot-elementary-os-8-iso/iso-download.sh)
+* [下載腳本](https://github.com/samwhelp/elementary-os-adjustment/blob/main/core/iso/boot-iso/boot-iso-by-grub/demo-boot-elementary-os-8-iso)
 
 
 
