@@ -23,13 +23,13 @@ grand_parent: ISO
 
 先參考「[Download ISO](https://samwhelp.github.io/note-about-elementary-os/read/core/iso/download-iso.html)」這篇提到的下載方式，下載「Elementary OS 官方提供最新的ISO檔案」。
 
-將「ISO檔案」放到「/opt/iso/elementaryos/latest/elementaryos-8.0-stable.20241122rc.iso」這個路徑。
+將「ISO檔案」放到「/opt/iso/elementaryos/latest/elementaryos-8.0-stable.20250314rc.iso」這個路徑。
 
 舉例：執行下面指令
 
 ``` sh
-sudo curl -fLo /opt/iso/elementaryos/latest/elementaryos-8.0-stable.20241122rc.iso --create-dirs \
-	https://sgp1.dl.elementary.io/download/MTczODQ5OTExMA==/elementaryos-8.0-stable.20241122rc.iso
+sudo curl -fLo /opt/iso/elementaryos/latest/elementaryos-8.0-stable.20250314rc.iso --create-dirs \
+	https://sgp1.dl.elementary.io/download/MTc0MjYzODI4MA==/elementaryos-8.0-stable.20250314rc.iso
 ```
 
 
@@ -55,7 +55,7 @@ sudo curl -fLo /opt/iso/elementaryos/latest/elementaryos-8.0-stable.20241122rc.i
 
 menuentry "Elementary OS 8.0 / 20241122rc" --class Ubuntu {
 	set gfxpayload=keep
-	set iso_file="/opt/iso/elementaryos/latest/elementaryos-8.0-stable.20241122rc.iso"
+	set iso_file="/opt/iso/elementaryos/latest/elementaryos-8.0-stable.20250314rc.iso"
 	search --set=iso_partition --no-floppy --file $iso_file
 	probe --set=iso_partition_uuid --fs-uuid $iso_partition
 	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"

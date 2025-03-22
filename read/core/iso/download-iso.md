@@ -13,6 +13,7 @@ parent: ISO
 
 ## elementary OS 8
 
+* Elementary OS / News / [elementary OS 8.0.1 Available Now](https://blog.elementary.io/os-8-0-1-available-now/)
 * Elementary OS / News / [elementary OS 8 Available Now ](https://blog.elementary.io/os-8-available-now/)
 
 
@@ -37,10 +38,10 @@ parent: ISO
 
 ### iso-download.sh
 
-執行下面的指令，下載「[elementaryos-8.0-stable.20241122rc.iso](https://sgp1.dl.elementary.io/download/MTczODQ5OTExMA==/elementaryos-8.0-stable.20241122rc.iso)」。
+執行下面的指令，下載「[elementaryos-8.0-stable.20250314rc.iso](https://sgp1.dl.elementary.io/download/MTc0MjYzODI4MA==/elementaryos-8.0-stable.20250314rc.iso)」。
 
 ``` sh
-wget -c 'https://sgp1.dl.elementary.io/download/MTczODQ5OTExMA==/elementaryos-8.0-stable.20241122rc.iso'
+wget -c 'https://sgp1.dl.elementary.io/download/MTc0MjYzODI4MA==/elementaryos-8.0-stable.20250314rc.iso'
 ```
 
 > 關於「-c」指的是續傳
