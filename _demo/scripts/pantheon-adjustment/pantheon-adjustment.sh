@@ -125,9 +125,15 @@ mod_pantheon_config_for_keybind_main () {
 
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "[]"
 
-	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Alt>a', '<Alt>Left']"
+	## > Alt+Left, Alt+Right, Alt+Up, used by file manager
 
-	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Alt>s', '<Alt>Right']"
+	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Alt>a', '<Alt>Left']"
+
+	#gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Alt>s', '<Alt>Right']"
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Alt>a']"
+
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Alt>s']"
 
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-last "['<Alt>z']"
 
