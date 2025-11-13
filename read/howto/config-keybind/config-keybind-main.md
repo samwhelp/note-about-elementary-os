@@ -200,7 +200,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Alt
 > 執行下面指令，綁定「`Win + grave`」來切換到「所有工作空間概覽」。
 
 ``` sh
-gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>grave', '<Super>Up', '<Super>d']"
+gsettings set io.elementary.desktop.wm.keybindings toggle-multitasking-view "['<Super>grave', '<Super>Up']"
 ```
 
 
@@ -323,7 +323,7 @@ gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>w']"
 
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
 
-#gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
+gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 
 gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>e']"
 
@@ -377,7 +377,7 @@ gsettings set io.elementary.desktop.wm.keybindings cycle-workspaces-next "[]"
 #gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>Tab', '<Super>Down']"
 
 
-gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>grave', '<Super>Up', '<Super>d']"
+gsettings set io.elementary.desktop.wm.keybindings toggle-multitasking-view "['<Super>grave', '<Super>Up']"
 
 gsettings set io.elementary.desktop.wm.keybindings expose-all-windows "['<Super>Tab', '<Super>Down']"
 
