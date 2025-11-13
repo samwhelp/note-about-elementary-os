@@ -91,7 +91,7 @@ mod_pantheon_config_for_keybind_main () {
 
 	gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
 
-	#gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
+	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 
 	gsettings set org.gnome.desktop.wm.keybindings begin-move "['<Super>e']"
 
@@ -156,10 +156,6 @@ mod_pantheon_config_for_keybind_main () {
 
 	#gsettings set org.gnome.shell.keybindings toggle-overview "['<Super>Tab', '<Super>Down']"
 
-
-	#gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>grave', '<Super>Up', '<Super>d']"
-
-	gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 
 	gsettings set io.elementary.desktop.wm.keybindings toggle-multitasking-view "['<Super>grave', '<Super>Up']"
 
