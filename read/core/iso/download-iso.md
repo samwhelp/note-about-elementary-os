@@ -42,7 +42,7 @@ parent: ISO
 執行下面的指令，下載「[elementaryos-8.0-stable-amd64.20250902rc.iso](https://sgp1.dl.elementary.io/download/MTc2Mjk5Njc2OQ==/elementaryos-8.0-stable-amd64.20250902rc.iso)」。
 
 ``` sh
-wget -c 'https://sgp1.dl.elementary.io/download/MTc2Mjk5Njc2OQ==/elementaryos-8.0-stable-amd64.20250902rc.iso' -O 'elementaryos-8.0-stable.20250314rc.iso'
+wget -c 'https://sgp1.dl.elementary.io/download/MTc2Mjk5Njc2OQ==/elementaryos-8.0-stable-amd64.20250902rc.iso' -O 'elementaryos-8.0-stable-amd64.20250902rc.iso'
 ```
 
 > 關於「-c」指的是續傳
