@@ -11,5 +11,5 @@ parent: 入門
 | ISO 檔案下載 |
 | --- |
 | [Download ISO](https://samwhelp.github.io/note-about-elementary-os/read/start/download/download_iso.html) |
-| [Boot ISO By USB](https://samwhelp.github.io/note-about-elementary-os/read/start/download/boot_iso_by_usb.html) |
-| [Boot ISO By Ventoy](https://samwhelp.github.io/note-about-elementary-os/read/start/download/boot_iso_by_ventoy.html) |
+| [Boot ISO Via USB](https://samwhelp.github.io/note-about-elementary-os/read/start/download/boot_iso_by_usb.html) |
+| [Boot ISO Via Ventoy](https://samwhelp.github.io/note-about-elementary-os/read/start/download/boot_iso_by_ventoy.html) |
