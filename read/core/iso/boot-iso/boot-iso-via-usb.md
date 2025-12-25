@@ -48,13 +48,13 @@ lsblk
 接著執行下面指令，就會寫入「USB隨身碟」。
 
 ``` sh
-sudo dd if=./elementaryos-8.0-stable.20250314rc.iso of=/dev/sdc bs=4M status=progress && sync
+sudo dd if=./elementaryos-8.1-stable-amd64.20251211.iso of=/dev/sdc bs=4M status=progress && sync
 ```
 
 或是執行下面指令，就會寫入「USB隨身碟」。
 
 ``` sh
-sudo dd if=./elementaryos-8.0-stable.20250314rc.iso of=/dev/sdc bs=4M status=progress conv=fsync oflag=direct
+sudo dd if=./elementaryos-8.1-stable-amd64.20251211.iso of=/dev/sdc bs=4M status=progress conv=fsync oflag=direct
 ```
 
 接著重新開機，在「BIOS」選擇使用「該USB隨身碟」開機。
