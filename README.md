@@ -33,7 +33,7 @@
 | -------- |
 | [ElementaryOS Config](https://github.com/samwhelp/elementary-os-adjustment/tree/main/prototype/main) |
 | [Tool Config](https://github.com/samwhelp/elementary-os-adjustment/tree/main/prototype/main/tool-config/part) |
-| [簡易微調](https://github.com/samwhelp/note-about-elementary-os/tree/gh-pages/_demo/scripts/pantheon-adjustment) |
+| [簡易微調](https://github.com/samwhelp/elementary-os-adjustment/tree/main/demo/scripts/pantheon-adjustment) |
 
 
 
