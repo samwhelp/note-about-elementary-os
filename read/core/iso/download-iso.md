@@ -13,6 +13,7 @@ parent: ISO
 
 ## elementary OS 8
 
+* Elementary OS / News / [elementary OS 8.1 Available Now](https://blog.elementary.io/os-8-1-available-now/)
 * Elementary OS / News / [elementary OS 8.0.2 Available Now](https://blog.elementary.io/os-8-0-2-available-now/)
 * Elementary OS / News / [elementary OS 8.0.1 Available Now](https://blog.elementary.io/os-8-0-1-available-now/)
 * Elementary OS / News / [elementary OS 8 Available Now ](https://blog.elementary.io/os-8-available-now/)
